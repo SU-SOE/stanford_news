@@ -2,10 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.su_news_body
     - field.storage.node.su_news_date_range
+    - field.storage.node.su_news_dek
     - field.storage.node.su_news_featured_image
     - field.storage.node.su_news_headline
+    - field.storage.node.su_news_topics
     - node.type.stanford_news
     - taxonomy.vocabulary.stanford_topics
   module:
@@ -13,7 +14,6 @@ dependencies:
     - image
     - node
     - taxonomy
-    - text
     - ui_patterns_views
     - user
 id: stanford_news_list
@@ -89,31 +89,37 @@ display:
             su_news_featured_image: 0
             su_news_date_range: 0
             su_news_headline: 0
-            su_news_body: 0
+            su_news_dek: 0
+            su_news_topics: 0
           separator: ''
           hide_empty: 0
-          pattern: card
+          pattern: news-card
           pattern_mapping:
             'views_row:su_news_featured_image':
-              destination: card_image
+              destination: news_card_image
               weight: 0
               plugin: views_row
               source: su_news_featured_image
             'views_row:su_news_date_range':
-              destination: card_super_headline
+              destination: news_card_date
               weight: 1
               plugin: views_row
               source: su_news_date_range
             'views_row:su_news_headline':
-              destination: card_headline
+              destination: news_card_headline
               weight: 2
               plugin: views_row
               source: su_news_headline
-            'views_row:su_news_body':
-              destination: card_body
+            'views_row:su_news_dek':
+              destination: news_card_dek
               weight: 3
               plugin: views_row
-              source: su_news_body
+              source: su_news_dek
+            'views_row:su_news_topics':
+              destination: news_card_topics
+              weight: 4
+              plugin: views_row
+              source: su_news_topics
           pattern_variant: default
       fields:
         su_news_featured_image:
@@ -131,10 +137,15 @@ display:
           table: node__su_news_headline
           field: su_news_headline
           plugin_id: field
-        su_news_body:
-          id: su_news_body
-          table: node__su_news_body
-          field: su_news_body
+        su_news_dek:
+          id: su_news_dek
+          table: node__su_news_dek
+          field: su_news_dek
+          plugin_id: field
+        su_news_topics:
+          id: su_news_topics
+          table: node__su_news_topics
+          field: su_news_topics
           plugin_id: field
       filters:
         status:
@@ -269,10 +280,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_body'
         - 'config:field.storage.node.su_news_date_range'
+        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_image'
         - 'config:field.storage.node.su_news_headline'
+        - 'config:field.storage.node.su_news_topics'
   page_1:
     display_plugin: page
     id: page_1
@@ -293,7 +305,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_body'
         - 'config:field.storage.node.su_news_date_range'
+        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_image'
         - 'config:field.storage.node.su_news_headline'
+        - 'config:field.storage.node.su_news_topics'
