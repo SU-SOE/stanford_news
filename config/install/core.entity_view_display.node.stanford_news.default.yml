@@ -1,0 +1,101 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stanford_news.su_news_body
+    - field.field.node.stanford_news.su_news_byline
+    - field.field.node.stanford_news.su_news_date_range
+    - field.field.node.stanford_news.su_news_dek
+    - field.field.node.stanford_news.su_news_featured_image
+    - field.field.node.stanford_news.su_news_featured_media
+    - field.field.node.stanford_news.su_news_headline
+    - field.field.node.stanford_news.su_news_publishing_date
+    - field.field.node.stanford_news.su_news_topics
+    - node.type.stanford_news
+  module:
+    - datetime_range
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: eBPpXx4dG3w1J1D3d--tEWfBHWJU2JI1UJL9DhU1dJI
+id: node.stanford_news.default
+targetEntityType: node
+bundle: stanford_news
+mode: default
+content:
+  su_news_body:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  su_news_byline:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  su_news_date_range:
+    weight: 3
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  su_news_dek:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  su_news_featured_image:
+    type: image
+    weight: 5
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  su_news_featured_media:
+    type: entity_reference_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  su_news_headline:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  su_news_topics:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true
+  su_news_publishing_date: true

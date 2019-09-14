@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * stanford_news.module
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function stanford_news_theme() {
+  return [
+    'node__stanford_news__full' => [
+      'template' => 'node--stanford-news',
+      'base hook' => 'node'
+    ],
+  ];
+}

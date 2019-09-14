@@ -1,0 +1,10 @@
+name: 'Stanford News Views'
+type: module
+description: 'Stanford news items and views.'
+core: 8.x
+package: Stanford
+version: 8.x-1.x
+dependencies:
+  - views
+  - ui_patterns
+  - ui_patterns_views

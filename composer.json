@@ -1,0 +1,19 @@
+{
+  "name": "su-soe/stanford_news",
+  "description": "Stanford News",
+  "type": "stanford-module",
+  "homepage": "https://github.com/SU-SOE/stanford_news",
+  "authors": [],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "drupal/auto_entitylabel": "~3.0@beta1",
+    "drupal/entity_print": "^2.x"
+  }
+}

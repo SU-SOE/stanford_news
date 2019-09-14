@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_news_date_range
+    - node.type.stanford_news
+  module:
+    - datetime_range
+id: node.stanford_news.su_news_date_range
+field_name: su_news_date_range
+entity_type: node
+bundle: stanford_news
+label: 'Date Range'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
