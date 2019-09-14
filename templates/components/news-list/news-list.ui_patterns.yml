@@ -1,0 +1,43 @@
+news-card:
+  label: News Card
+  description: "Building block component for the news list page."
+  variants:
+    default:
+      label: Default
+      description: "Default"
+    postcard:
+      label: Postcard
+      description: "Horizontal postcard type card"
+      modifier_class: su-news-card--horizontal
+  fields:
+    news_card_image:
+      type: text
+      label: "Image"
+      description: "The cards image."
+      preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
+    news_card_date:
+      type: text
+      label: "Date"
+      description: "Text heading"
+      preview: "This is a super headline"
+    news_card_headline:
+      type: text
+      label: "Headline"
+      description: "Text heading"
+      preview: "This is the headline"
+    news_card_dek:
+      type: text
+      label: "Dek"
+      description: "This is the dek specific to news items"
+      preview: "<p>Sample text goes here and this card should be able to handle a few lines.</p>"
+    news_card_topics:
+      type: text
+      label: "Topics"
+      description: "Associated terms from the topics taxonomy"
+      preview: "Link to taxonomy terms"
+  use: "@news/components/news-card/news-card.twig"
+  libraries:
+    - card:
+        css:
+          component:
+            ../../../dist/css/news-card.css: {}
