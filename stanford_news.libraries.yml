@@ -41,7 +41,7 @@
 # component’s structure to be “swappable”, and omitting these entirely should
 # not break the component’s functionality or basic usability.
 
-# Low level core styling. Decanter base element stuff.
+# News accelerant specific libraries.
 newsletter_signup:
   version: VERSION
   css:
