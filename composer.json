@@ -13,7 +13,16 @@
     }
   ],
   "require": {
-    "drupal/auto_entitylabel": "~3.0@beta1",
-    "drupal/entity_print": "^2.x"
+    "drupal/auto_entitylabel": "^3.0@beta1",
+    "drupal/entity_print": "^2.x",
+    "drupal/views_block_filter_block": "^1.-@beta1"
+  },
+  "extra": {
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+        "https://www.drupal.org/project/drupal/issues/2955877": "https://www.drupal.org/files/issues/2019-01-24/core-2955877-Fix-unsupported-operand-types-11.patch"
+      }
+    }
   }
 }

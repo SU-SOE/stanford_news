@@ -329,6 +329,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -345,15 +346,28 @@ display:
         - 'config:field.storage.node.su_news_featured_image'
         - 'config:field.storage.node.su_news_headline'
         - 'config:field.storage.node.su_news_topics'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      path: news
       exposed_block: true
+      use_ajax: false
+      defaults:
+        use_ajax: false
+        exposed_form: false
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
     cache_metadata:
       max-age: -1
       contexts:

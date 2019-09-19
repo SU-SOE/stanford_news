@@ -11,6 +11,7 @@ dependencies:
   - components
   - datetime
   - ds
+  - ds_extra
   - entity_reference_revisions
   - field
   - file
@@ -29,6 +30,7 @@ dependencies:
   - ui_patterns_library
   - ui_patterns_views
   - user
+  - views_block_filter_block
 
 component-libraries:
   news:

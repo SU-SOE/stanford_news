@@ -42,6 +42,12 @@
 # not break the component’s functionality or basic usability.
 
 # News accelerant specific libraries.
+news_node:
+  version: VERSION
+  css:
+    base:
+      dist/css/news-node.css: {}
+
 newsletter_signup:
   version: VERSION
   css:

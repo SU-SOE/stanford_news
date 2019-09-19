@@ -23,9 +23,9 @@
 @media (max-width: 767px) {
     .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
         width: 200px; } }
-.page-magazine .mailchimp-magazine-block #mc_embed_signup_scroll,
-.page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll,
-.page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
+.mailchimp-magazine-block #mc_embed_signup_scroll,
+.mailchimp-magazine-block #mc_embed_signup_scroll,
+.mailchimp-magazine-block #mc_embed_signup_scroll {
     margin-bottom: 80px;
     padding: 65px 0;
     box-shadow: none; }
@@ -34,9 +34,9 @@
     .page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll,
     .page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
         margin-bottom: 20px; } }
-.node-type-stanford-magazine-issue .mailchimp-magazine-block #mc_embed_signup_scroll {
+.stanford-news .mailchimp-magazine-block #mc_embed_signup_scroll {
     box-shadow: none;
     padding: 65px 0; }
 
-.node-type-stanford-magazine-issue .mailchimp-magazine-block form {
+.stanford-news .mailchimp-magazine-block form {
     margin-bottom: 0; }
