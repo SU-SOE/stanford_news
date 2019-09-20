@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.stanford_news.su_news_body
     - field.field.node.stanford_news.su_news_byline
-    - field.field.node.stanford_news.su_news_date_range
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_image
     - field.field.node.stanford_news.su_news_featured_media
@@ -13,7 +12,7 @@ dependencies:
     - field.field.node.stanford_news.su_news_topics
     - node.type.stanford_news
   module:
-    - datetime_range
+    - datetime
     - image
     - layout_builder
     - text
@@ -44,16 +43,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  su_news_date_range:
-    weight: 3
-    label: hidden
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: daterange_default
-    region: content
   su_news_dek:
     weight: 2
     label: hidden
@@ -66,7 +55,7 @@ content:
     type: image
     weight: 5
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -88,6 +77,15 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  su_news_publishing_date:
+    type: datetime_custom
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'F d, Y'
+    third_party_settings: {  }
   su_news_topics:
     weight: 0
     label: hidden
@@ -98,4 +96,3 @@ content:
     region: content
 hidden:
   links: true
-  su_news_publishing_date: true

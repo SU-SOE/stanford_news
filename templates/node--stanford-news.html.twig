@@ -1,6 +1,8 @@
 {# Create classes array. The 'node' class is required for contextual edit links. #}
 {% set classes = [
-  'node'
+  'node',
+  'news',
+  'centered-container'
 ] %}
 
 {# BEM inspired class syntax: https://en.bem.info/
@@ -51,14 +53,25 @@
       {{ content.su_news_headline }}
       </div>
       {% if content.su_news_dek is not empty %}
+      <div class="news-dek">
           {{ content.su_news_dek }}
+      </div>
       {% endif %}
-      {% if content.su_news_date_range is not empty and content.su_news_byline is not empty %}
+      {% if content.su_news_publishing_date is not empty and content.su_news_byline is not empty %}
           {% set pipe = "|" %}
-          {{ content.su_news_date_range }} {{ pipe }} {{ content.su_news_byline }}
+      <div class="news-date-pipe-byline">
+          {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
+      </div>
       {% endif %}
-      {% if content.su_news_featured_image is not empty %}
-          {{ content.su_news_featured_image }}
+      {% if content.su_news_featured_media is not empty %}
+      <div class="news-image">
+          {{ content.su_news_featured_media }}
+      </div>
+      {% endif %}
+      {% if content.su_news_body is not empty %}
+      <div class="news-body centered-container">
+          {{ content.su_news_body }}
+      </div>
       {% endif %}
   </div><!-- /.content -->
 

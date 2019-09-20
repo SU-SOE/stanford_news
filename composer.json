@@ -22,7 +22,14 @@
     "patches": {
       "drupal/core": {
         "https://www.drupal.org/project/drupal/issues/2955877": "https://www.drupal.org/files/issues/2019-01-24/core-2955877-Fix-unsupported-operand-types-11.patch"
+      },
+      "drupal/ds": {
+        "patches": "patches/contrib/ui_patterns_views-preview.patch"
+      },
+      "drupal/ui_patterns": {
+        "https://www.drupal.org/project/ds/issues/2877487": "https://www.drupal.org/files/issues/2019-01-31/ds_fix_entities_without_fields.patch"
       }
     }
   }
 }
+

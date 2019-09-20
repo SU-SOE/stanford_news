@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.stanford_news.su_news_body
     - field.field.node.stanford_news.su_news_byline
-    - field.field.node.stanford_news.su_news_date_range
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_image
     - field.field.node.stanford_news.su_news_featured_media
@@ -15,10 +14,11 @@ dependencies:
     - node.type.stanford_news
   module:
     - datetime
-    - datetime_range
     - image
     - path
     - text
+_core:
+  default_config_hash: bYyYz8aCcO-Ik5NzDLjHYmwclwrnuDsVMKno6TwMqTk
 id: node.stanford_news.default
 targetEntityType: node
 bundle: stanford_news
@@ -73,12 +73,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  su_news_date_range:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: daterange_default
     region: content
   su_news_dek:
     weight: 2

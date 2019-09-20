@@ -15,7 +15,7 @@ news-card:
       label: "Image"
       description: "The cards image."
       preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
-    news_card_date:
+    news_card_publishing_date:
       type: text
       label: "Date"
       description: "Text heading"
