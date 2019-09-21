@@ -104,6 +104,10 @@
         max-width: 708px;
         margin: auto; } }
 
+.news .media--type-image figure {
+    margin: 0;
+}
+
 .news.centered-container {
     margin: 0 auto; }
 @media only screen and (min-width: 0) {
