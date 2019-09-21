@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
     - field.field.node.stanford_news.su_news_topics
+    - field.field.node.stanford_news.su_page_components
     - node.type.stanford_news
   module:
     - datetime
+    - entity_reference_revisions
     - image
     - layout_builder
     - text
@@ -29,7 +31,7 @@ bundle: stanford_news
 mode: default
 content:
   su_news_body:
-    weight: 6
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -62,7 +64,7 @@ content:
     third_party_settings: {  }
   su_news_featured_media:
     type: entity_reference_entity_view
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       view_mode: default
@@ -93,6 +95,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  su_page_components:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
 hidden:
   links: true
