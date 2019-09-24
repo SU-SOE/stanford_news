@@ -1,0 +1,8 @@
+name: 'Stanford News Paragraphs'
+type: module
+description: 'Stanford news paragragh types.'
+core: 8.x
+package: Stanford
+version: 8.x-1.x
+dependencies:
+  - stanford_news

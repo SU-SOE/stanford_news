@@ -1,0 +1,27 @@
+{
+  "name": "stanford_news",
+  "description": "SCSS for Stanford News accelerant.",
+  "author": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/SU-SOE/stanford_news",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SU-SOE/stanford_news.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SU-SOE/stanford_news/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
