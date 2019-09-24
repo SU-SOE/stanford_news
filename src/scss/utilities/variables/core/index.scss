@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+//
+// Core
+//
+// Variables for core settings.
+//
+// Style guide: Variables.Core
+//
+
+@import
+'colors',
+'core-color-maps',
+'magic-numbers', // Needs to be up at the top.
+'box-shadow',
+'breakpoints',
+'file-paths',
+'grid',
+'gutter',
+'modular-spacing',
+'modular-typography',
+'screen-margins',
+'typography';

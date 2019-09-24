@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+//
+// Typography
+//
+// Style guide: Variables.Core.Typography
+//
+
+//
+// $root-font-size
+//
+// Font size.
+//
+// Markup: $root-font-size: 10px;
+//
+// Style guide: Variables.Core.Typography.root-font-size
+//
+$root-font-size: 10px;
+
+//
+// $base-font-size
+//
+// Font size.
+//
+// Markup: $base-font-size: 2rem !default;
+//
+// Style guide: Variables.Core.Typography.base-font-size
+//
+$base-font-size: 2rem !default;
+
+//
+// $base-line-height
+//
+// Default line height.
+//
+// Markup: $base-line-height: 1.4 !default;
+//
+// Style guide: Variables.Core.Typography.base-line-height
+//
+$base-line-height: 1.4 !default;
+
+//
+// $displays-line-height
+//
+// Default line height.
+//
+// Markup: $displays-line-height: 1.2 !default;
+//
+// Style guide: Variables.Core.Typography.displays-line-height
+//
+$displays-line-height: 1.2 !default;
+
+//
+// $lead-line-height
+//
+// Default line height.
+//
+// Markup: $lead-line-height: 1.5 !default;
+//
+// Style guide: Variables.Core.Typography.lead-line-height
+//
+$intro-line-height: 1.5 !default;
+
+//
+// $font-sans
+//
+// font-sans font family.
+//
+// Markup: $font-sans: 'Source Sans Pro', $font-stack-helvetica !default;
+//
+// Style guide: Variables.Core.Typography.font-sans
+//
+$font-sans: 'Source Sans Pro', $font-stack-helvetica !default;
+
+//
+// $font-serif
+//
+// font-serif font family.
+//
+// Markup: $font-serif: 'Source Serif Pro', $font-stack-georgia !default;
+//
+// Style guide: Variables.Core.Typography.font-serif
+//
+$font-serif: 'Source Serif Pro', $font-stack-georgia !default;
+
+//
+// $font-slab
+//
+// font-slab font family.
+//
+// Markup: $font-slab: 'Roboto Slab', $font-stack-georgia !default;
+//
+// Style guide: Variables.Core.Typography.font-slab
+//
+$font-slab: 'Roboto Slab', $font-stack-georgia !default;
+
+//
+// $font-handwriting
+//
+// font-script font family.
+//
+// Markup: $font-handwriting: 'Kalam', $font-stack-helvetica !default;
+//
+// Style guide: Variables.Core.Typography.font-script
+//
+$font-handwriting: 'Kalam', $font-stack-helvetica !default;
+
+//
+// $font-sanskrit
+//
+// font-sanskrit font family.
+//
+// Markup: $font-sanskrit: 'Noto Sans', $font-stack-helvetica !default;
+//
+// Style guide: Variables.Core.Typography.font-sanskrit
+//
+$font-sanskrit: 'Noto Sans', $font-stack-helvetica !default;
+
+//
+// $font-x-light
+//
+// font-x-light font weight.
+//
+// Markup: $font-x-light: 100 !default;
+//
+// Style guide: Variables.Core.Typography.font-x-light
+//
+$font-x-light: 100 !default;
+
+//
+// $font-light
+//
+// font-light font weight.
+//
+// Markup: $font-light: 200 !default;
+//
+// Style guide: Variables.Core.Typography.font-light
+//
+$font-light: 200 !default;
+
+//
+// $font-regular
+//
+// font-regular font weight.
+//
+// Markup: $font-regular: 400 !default;
+//
+// Style guide: Variables.Core.Typography.font-regular
+//
+$font-regular: 400 !default;
+
+//
+// $font-semi-bold
+//
+// font-semi-bold font weight.
+//
+// Markup: $font-semi-bold: 600 !default;
+//
+// Style guide: Variables.Core.Typography.font-semi-bold
+//
+$font-semi-bold: 600 !default;
+
+//
+// $font-bold
+//
+// font-bold font weight.
+//
+// Markup: $font-bold: 700 !default;
+//
+// Style guide: Variables.Core.Typography.font-bold
+//
+$font-bold: 700 !default;
+
+//
+// $font-black
+//
+// font-black font weight.
+//
+// Markup: $font-black: 900 !default;
+//
+// Style guide: Variables.Core.Typography.font-black
+//
+$font-black: 900 !default;

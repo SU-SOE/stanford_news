@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+//
+// @button-big
+//
+// Big button styling.
+// Same as primary but with larger font-size, more padding.
+//
+// Style guide: Mixins.Button.button-big
+//
+
+@mixin button-big {
+  @include button-primary;
+
+  @include type-c;
+  @include padding(1.5rem 3rem 1.8rem);
+}

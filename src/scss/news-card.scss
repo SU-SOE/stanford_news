@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+///
+/// ROLL UP
+///
+
+// 1. utilities
+@import
+'utilities/index';
+
+// 2. Core elements.
+@import
+'core/index',
+'elements/index';
+
+// 3. components
+@import
+'components/news-card/index';
