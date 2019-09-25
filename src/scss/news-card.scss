@@ -4,15 +4,24 @@
 /// ROLL UP
 ///
 
-// 1. utilities
+// 1. Pre-vendor settings.
+@import
+'utilities/variables/pre-vendor/index';
+
+// 2. Vendors.
+@import
+'../../node_modules/bourbon/core/bourbon.scss',
+'core/normalize';
+
+// 3. utilities
 @import
 'utilities/index';
 
-// 2. Core elements.
+// 4. Core elements.
 @import
 'core/index',
 'elements/index';
 
-// 3. components
+// 5. components
 @import
 'components/news-card/index';
