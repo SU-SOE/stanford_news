@@ -1,10 +1,13 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
       options: {
         lineNumbers: true,
-        sourcemap: 'none'
+        sourcemap: 'none',
+        implementation: sass,
       },
       dist: {
         files: {
@@ -23,3 +26,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['watch']);
 }
+
+
+

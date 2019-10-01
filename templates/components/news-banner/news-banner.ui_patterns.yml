@@ -1,0 +1,31 @@
+news-banner:
+  label: News Banner
+  description: "Banner for news page."
+  variants:
+    default:
+      label: Default
+      description: "Default"
+  fields:
+    news_banner_image:
+      type: text
+      label: "Banner Image"
+      description: "The cards image."
+      preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
+    news_banner_title:
+      type: text
+      label: "Banner Title"
+      description: "Banner Title"
+      preview: "This is a super headline"
+    news_banner_topic:
+      type: text
+      label: "Banner Topic"
+      description: "Text heading"
+      preview: "This is the headline"
+  libraries:
+    - card:
+        css:
+          component:
+            ../../../dist/css/news-banner.css: { weight:1000 }
+        js:
+          component:
+            ../../../dist/js/news-banner.js: { weight:1000 }
