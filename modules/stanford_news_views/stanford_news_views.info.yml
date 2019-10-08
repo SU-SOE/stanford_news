@@ -6,4 +6,5 @@ package: Stanford
 version: 8.x-1.x
 dependencies:
   - stanford_news
+  - views_block_filter_block
   - views_infinite_scroll

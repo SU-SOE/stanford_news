@@ -38,4 +38,4 @@ dependencies:
 component-libraries:
   news:
     paths:
-      - dist/templates/news
+      - lib/news

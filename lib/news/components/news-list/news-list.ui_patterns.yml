@@ -35,9 +35,9 @@ news-card:
       label: "Topics"
       description: "Associated terms from the topics taxonomy"
       preview: "Link to taxonomy terms"
-  use: "@news/components/news-card/news-card.twig"
+  use: "@news/components/news-list/news-card.twig"
   libraries:
     - card:
         css:
           component:
-            ../../../dist/css/news-card.css: { weight:1000 }
+            ../../../../dist/css/news-card.css: { weight:1000 }
