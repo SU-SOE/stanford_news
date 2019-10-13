@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.stanford_news.su_news_body
     - field.field.node.stanford_news.su_news_byline
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_image
@@ -18,7 +17,6 @@ dependencies:
     - image
     - paragraphs
     - path
-    - text
 _core:
   default_config_hash: bYyYz8aCcO-Ik5NzDLjHYmwclwrnuDsVMKno6TwMqTk
 id: node.stanford_news.default
@@ -59,15 +57,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  su_news_body:
-    weight: 8
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
   su_news_byline:
     weight: 3
     settings:
