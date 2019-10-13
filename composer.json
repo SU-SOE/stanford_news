@@ -14,7 +14,7 @@
   ],
   "require": {
     "drupal/auto_entitylabel": "^3.x-dev",
-    "drupal/entity_print": "^2.x",
+    "drupal/entity_print": "^2.x-dev",
     "drupal/views_block_filter_block": "^1.-@beta1",
     "drupal/views_infinite_scroll": "^1.6",
     "su-sws/jumpstart_ui": "dev-8.x-1.x"
