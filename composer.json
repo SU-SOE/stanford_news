@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "drupal/auto_entitylabel": "^3.0@beta2",
+    "drupal/auto_entitylabel": "^3.-@beta2",
     "drupal/entity_print": "^2.x",
     "drupal/views_block_filter_block": "^1.-@beta1",
     "drupal/views_infinite_scroll": "^1.6",
