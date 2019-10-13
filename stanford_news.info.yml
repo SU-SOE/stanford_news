@@ -24,8 +24,6 @@ dependencies:
   - path
   - pathauto
   - stanford_media
-  - stanford_news_paragraphs
-  - stanford_news_views
   - taxonomy
   - text
   - ui_patterns
