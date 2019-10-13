@@ -34,8 +34,3 @@ dependencies:
   - ui_patterns_views
   - user
   - views_block_filter_block
-
-component-libraries:
-  news:
-    paths:
-      - lib/news

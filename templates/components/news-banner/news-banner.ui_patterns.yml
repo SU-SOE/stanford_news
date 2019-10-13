@@ -21,9 +21,9 @@ news-banner:
       label: "Banner Topic"
       description: "Text heading"
       preview: "This is the headline"
-  use: "@news/components/news-banner/news-banner.twig"
+  use: "@stanford_news/templates/components/news-banner/news-banner.twig"
   libraries:
     - card:
         css:
           component:
-            ../../../../dist/css/news-banner.css: { weight:1000 }
+            ../../../dist/css/news-banner.css: { weight:1000 }
