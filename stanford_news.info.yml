@@ -11,7 +11,7 @@ dependencies:
   - components
   - datetime
   - ds
-  - ds_extra
+  - ds_extras
   - entity_reference_revisions
   - field
   - file
