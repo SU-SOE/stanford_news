@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.stanford_news.su_news_byline
+    - field.field.node.stanford_news.su_news_components
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_image
     - field.field.node.stanford_news.su_news_featured_media
@@ -25,7 +26,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -37,7 +38,7 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 14
+    weight: 13
     region: content
     settings:
       display_label: true
@@ -46,12 +47,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 15
+    weight: 14
     region: content
     settings:
       display_label: true
@@ -64,6 +65,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  su_news_components:
+    type: entity_reference_paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   su_news_dek:
     weight: 2
     settings:
@@ -73,7 +86,7 @@ content:
     type: string_textfield
     region: content
   su_news_featured_image:
-    weight: 10
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -98,7 +111,7 @@ content:
     type: string_textfield
     region: content
   su_news_publishing_date:
-    weight: 9
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -114,7 +127,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS
