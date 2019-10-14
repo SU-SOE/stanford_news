@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
     - field.field.node.stanford_news.su_news_topics
-    - field.field.node.stanford_news.su_page_components
     - image.style.thumbnail
     - node.type.stanford_news
   module:
