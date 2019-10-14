@@ -113,18 +113,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  su_page_components:
-    weight: 7
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    type: entity_reference_paragraphs
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 12
