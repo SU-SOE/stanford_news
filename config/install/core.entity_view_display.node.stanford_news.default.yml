@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.stanford_news.su_news_byline
     - field.field.node.stanford_news.su_news_components
     - field.field.node.stanford_news.su_news_dek
-    - field.field.node.stanford_news.su_news_featured_image
     - field.field.node.stanford_news.su_news_featured_media
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
@@ -14,7 +13,6 @@ dependencies:
   module:
     - datetime
     - entity_reference_revisions
-    - image
     - layout_builder
     - user
 third_party_settings:
@@ -53,15 +51,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  su_news_featured_image:
-    type: image
-    weight: 7
-    region: content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   su_news_featured_media:
     type: entity_reference_entity_view
     weight: 5

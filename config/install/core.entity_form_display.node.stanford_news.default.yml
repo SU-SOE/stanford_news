@@ -5,16 +5,13 @@ dependencies:
     - field.field.node.stanford_news.su_news_byline
     - field.field.node.stanford_news.su_news_components
     - field.field.node.stanford_news.su_news_dek
-    - field.field.node.stanford_news.su_news_featured_image
     - field.field.node.stanford_news.su_news_featured_media
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
     - field.field.node.stanford_news.su_news_topics
-    - image.style.thumbnail
     - node.type.stanford_news
   module:
     - datetime
-    - image
     - paragraphs
     - path
 _core:
@@ -84,14 +81,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  su_news_featured_image:
-    weight: 8
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   su_news_featured_media:
     weight: 6
