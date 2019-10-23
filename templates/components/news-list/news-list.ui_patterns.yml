@@ -35,7 +35,7 @@ news-card:
       label: "Topics"
       description: "Associated terms from the topics taxonomy"
       preview: "Link to taxonomy terms"
-  use: "@stanford_news/templates/components/news-list/news-card.twig"
+  use: "@news/news-list/news-card.twig"
   libraries:
     - card:
         css:
