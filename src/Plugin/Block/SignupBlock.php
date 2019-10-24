@@ -22,8 +22,6 @@ class SignupBlock extends BlockBase {
   public function build() {
 
     return [
-      '#type' => 'inline_template',
-      '#id' => 'signup_block',
       '#theme' => 'signup_block'
     ];
   }

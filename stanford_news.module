@@ -19,9 +19,9 @@ function stanford_news_theme() {
       'base hook' => 'field'
     ],
     'signup_block' => [
-      'template' => 'signup-block',
-      'base hook' => 'block'
-    ],
+      'variables' => [],
+      'template' => 'signup-block'
+    ]
   ];
 }
 
