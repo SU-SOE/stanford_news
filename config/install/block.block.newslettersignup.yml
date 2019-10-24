@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - stanford_news
+  theme:
+    - stanford_basic
+id: newslettersignup
+theme: stanford_basic
+region: content
+weight: 0
+provider: null
+plugin: signup_block
+settings:
+  id: signup_block
+  label: 'Newsletter Signup'
+  provider: stanford_news
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      stanford_news: stanford_news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
