@@ -63,10 +63,17 @@
           {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
       </div>
       {% endif %}
+      <div class="news-social-media">
+      </div>
       {% if content.su_news_featured_media is not empty %}
       <div class="news-image">
+        <div class="news-image-caption">
           {{ content.su_news_featured_media }}
+        </div>
       </div>
+      {% endif %}
+      {% if content.su_news_featured_media is not empty %}
+          {{ content.su_news_featured_media_caption }}
       {% endif %}
       {% if content.su_news_components is not empty %}
       <div class="news-page-components">

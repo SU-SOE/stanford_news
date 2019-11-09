@@ -12,10 +12,11 @@ dependencies:
     - node.type.stanford_news
   module:
     - datetime
+    - media_library
     - paragraphs
     - path
 _core:
-  default_config_hash: bYyYz8aCcO-Ik5NzDLjHYmwclwrnuDsVMKno6TwMqTk
+  default_config_hash: Gmg9Dt_11ncGRymo0iWQV9uewa0Y01zJTp-3q8nDW4M
 id: node.stanford_news.default
 targetEntityType: node
 bundle: stanford_news
@@ -85,11 +86,9 @@ content:
   su_news_featured_media:
     weight: 6
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   su_news_headline:
     weight: 1
@@ -111,6 +110,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
@@ -122,6 +122,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   url_redirects:
     weight: 5

@@ -79,6 +79,16 @@
 .news-page-components {
 
 }
+
+.news-social-media div {
+  display: inline-block;
+}
+.news-social-media img {
+  width: auto;
+  height: 40px;
+  margin-right: -10px;
+}
+
 @media only screen and (min-width: 0) {
   .news-page-components {
     max-width: calc(100% - 40px);
