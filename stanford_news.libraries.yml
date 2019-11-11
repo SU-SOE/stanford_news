@@ -47,6 +47,11 @@ news_node:
   css:
     base:
       dist/css/news-node.css: {}
+  js:
+    dist/js/news-node.js: {}
+  dependencies:
+    - core/jquery
+
 
 newsletter_signup:
   version: VERSION

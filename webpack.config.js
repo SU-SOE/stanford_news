@@ -29,6 +29,8 @@ const srcSass = path.resolve(__dirname, process.env.npm_package_config_srcSass);
 const distSass = path.resolve(__dirname, process.env.npm_package_config_distSass);
 const srcJS = path.resolve(__dirname, process.env.npm_package_config_srcJS);
 const distJS = path.resolve(__dirname, process.env.npm_package_config_distJS);
+const srcAssets = path.resolve(__dirname, process.env.npm_package_config_srcAssets);
+const distAssets = path.resolve(__dirname, process.env.npm_package_config_distAssets);
 
 // /////////////////////////////////////////////////////////////////////////////
 // Functions ///////////////////////////////////////////////////////////////////
@@ -46,9 +48,10 @@ var webpackConfig = {
     devtool: 'source-map',
     // What build?
     entry: {
-        "news-node": path.resolve(__dirname, srcSass + "/components/news-node/news-node.scss"),
+        "news-node": path.resolve(__dirname, srcJS + "/components/news-node/news-node.js"),
         "news-card": path.resolve(__dirname, srcSass + "/components/news-card/news-card.scss"),
-        "newsletter": path.resolve(__dirname, srcSass + "newsletter-signup.scss")
+        "newsletter": path.resolve(__dirname, srcSass + "newsletter-signup.scss"),
+        "news-assets": path.resolve(__dirname, src + "newsletter-signup.scss")
     },
     // Where put build?
     output: {
