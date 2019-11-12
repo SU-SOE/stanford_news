@@ -46,23 +46,3 @@ function stanford_news_preprocess_node(&$variables) {
     $variables['#attached']['library'][] = 'stanford_news/news_node';
   }
 }
-
-/**
- * Implements hook_views_pre_view().
- */
-function stanford_news_views_pre_view(\Drupal\views\ViewExecutable $view, $display_id, array &$args) {
-  if ($view->id() == 'stanford_news_list' && $display_id == 'block_3') {
-    //if (isset($args[0])) {
-    //$display_handler = $view->display_handler();
-    //kint($display_handler);
-      //$filters = $view->display_handler->getOption('filters');
-      //kint($filters);
-//      if ($filters['field_filter']) {
-//        foreach ($filters['field_filter']['value'] as $key => $filter) {
-//          unset($filters['field_filter']['value'][$key]);
-//        }
-//      }
-//      $view->display_handler->overrideOption('filters', $filters);
-  }
-
-}
