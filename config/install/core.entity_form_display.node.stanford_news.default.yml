@@ -6,17 +6,20 @@ dependencies:
     - field.field.node.stanford_news.su_news_components
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_media
+    - field.field.node.stanford_news.su_news_featured_media_caption
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
+    - field.field.node.stanford_news.su_news_source
     - field.field.node.stanford_news.su_news_topics
     - node.type.stanford_news
   module:
     - datetime
+    - link
     - media_library
     - paragraphs
     - path
 _core:
-  default_config_hash: Gmg9Dt_11ncGRymo0iWQV9uewa0Y01zJTp-3q8nDW4M
+  default_config_hash: _mSzOI7ZnsbxDYYlIPugf5pmLgQjg9K4rsagqNsgpzk
 id: node.stanford_news.default
 targetEntityType: node
 bundle: stanford_news
@@ -90,6 +93,14 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  su_news_featured_media_caption:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   su_news_headline:
     weight: 1
     settings:
@@ -99,10 +110,18 @@ content:
     type: string_textfield
     region: content
   su_news_publishing_date:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  su_news_source:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   su_news_topics:
     weight: 0
