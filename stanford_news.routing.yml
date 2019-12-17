@@ -1,0 +1,7 @@
+# file @stanford_news.routing.yml
+stanford_news.listPage:
+  path: '/news-test/{slug}'
+  defaults:
+    _controller: '\Drupal\stanford_news\Controller\NewsListController::content'
+  requirements:
+    _permission: 'access content'
