@@ -6,17 +6,20 @@ dependencies:
     - field.field.node.stanford_news.su_news_components
     - field.field.node.stanford_news.su_news_dek
     - field.field.node.stanford_news.su_news_featured_media
+    - field.field.node.stanford_news.su_news_featured_media_caption
     - field.field.node.stanford_news.su_news_headline
     - field.field.node.stanford_news.su_news_publishing_date
+    - field.field.node.stanford_news.su_news_source
     - field.field.node.stanford_news.su_news_topics
     - node.type.stanford_news
   module:
     - datetime
+    - link
     - media_library
     - paragraphs
     - path
 _core:
-  default_config_hash: Gmg9Dt_11ncGRymo0iWQV9uewa0Y01zJTp-3q8nDW4M
+  default_config_hash: kCu7LtHLFQMyE1xEChnLSAvljhmpMIwwhXA3zQ-3Gd8
 id: node.stanford_news.default
 targetEntityType: node
 bundle: stanford_news
@@ -24,19 +27,19 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 13
+    weight: 14
     region: content
     settings:
       display_label: true
@@ -45,12 +48,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 14
+    weight: 15
     region: content
     settings:
       display_label: true
@@ -65,7 +68,7 @@ content:
     region: content
   su_news_components:
     type: entity_reference_paragraphs
-    weight: 9
+    weight: 10
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -84,12 +87,20 @@ content:
     type: string_textfield
     region: content
   su_news_featured_media:
-    weight: 6
+    weight: 7
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  su_news_featured_media_caption:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   su_news_headline:
     weight: 1
     settings:
@@ -99,10 +110,18 @@ content:
     type: string_textfield
     region: content
   su_news_publishing_date:
-    weight: 7
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  su_news_source:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   su_news_topics:
     weight: 0
@@ -116,7 +135,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -125,7 +144,7 @@ content:
       match_limit: 10
     third_party_settings: {  }
   url_redirects:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
