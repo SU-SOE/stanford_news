@@ -1,0 +1,29 @@
+news-vertical-teaser:
+  label: News Vertical Teaser
+  description: "Building block component for the news list page."
+  variants:
+    default:
+      label: Default
+      description: "Default"
+  fields:
+    news_vertical_teaser_image:
+      type: text
+      label: "Image"
+      description: "The cards image."
+      preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
+    news_vertical_teaser_title:
+      type: text
+      label: "Title"
+      description: "Text heading"
+      preview: "This is a super headline"
+    news_topics:
+      type: text
+      label: "Topics"
+      description: "Associated terms from the topics taxonomy"
+      preview: "Link to taxonomy terms"
+  use: "@news/news-list/news-vertical-teaser.twig"
+  libraries:
+    - card:
+        css:
+          component:
+            ../../../dist/css/news-card.css: { weight:1000 }
