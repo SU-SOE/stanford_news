@@ -21,7 +21,7 @@ news-vertical-teaser:
       label: "Topics"
       description: "Associated terms from the topics taxonomy"
       preview: "Link to taxonomy terms"
-  use: "@news/news-list/news-vertical-teaser.twig"
+  use: "@news/news-vertical-teaser/news-vertical-teaser.twig"
   libraries:
     - card:
         css:
