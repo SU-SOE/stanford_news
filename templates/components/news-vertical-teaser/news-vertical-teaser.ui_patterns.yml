@@ -1,6 +1,6 @@
 news-vertical-teaser:
   label: News Vertical Teaser
-  description: "Building block component for the news list page."
+  description: "News Vertical Teaser"
   variants:
     default:
       label: Default
@@ -9,13 +9,13 @@ news-vertical-teaser:
     news_vertical_teaser_image:
       type: text
       label: "Image"
-      description: "The cards image."
+      description: "The vertical teaser image."
       preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
-    news_vertical_teaser_title:
+    news_vertical_teaser_headline:
       type: text
-      label: "Title"
+      label: "Headline"
       description: "Text heading"
-      preview: "This is a super headline"
+      preview: "This is a headline"
     news_topics:
       type: text
       label: "Topics"
@@ -26,4 +26,4 @@ news-vertical-teaser:
     - card:
         css:
           component:
-            ../../../dist/css/news-card.css: { weight:1000 }
+            ../../../dist/css/news-vertical-teaser.css: { weight:1000 }
