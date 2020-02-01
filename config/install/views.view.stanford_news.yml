@@ -770,7 +770,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 0
           offset: 0
     cache_metadata:
       max-age: -1
