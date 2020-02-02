@@ -7,13 +7,13 @@
  *
  * Available variables:
  * - attributes: For additional HTML attributes not already provided.
- * - news_banner_image: Hero image for banner
- * - news_banner_title: Title of banner
- * - news_banner_topic: Topic selected. Dynamically altered vi news-banner.js
+ * - news_vertical_teaser_image: Hero image for banner
+ * - news_vertical_teaser_headline: Title of banner
+ * - news_topics: Topic selected. Dynamically altered vi news-banner.js
  */
 #}
-<div {{ attributes }} class="su-news-vertical-card">
+<div {{ attributes }} class="su-news-vertical-teaser">
   {{ news_vertical_teaser_image }}
-  {{ news_vertical_teaser_title }}
-  {{ news_topic }}
+  {{ news_vertical_teaser_headline }}
+  {{ news_topics }}
 </div>

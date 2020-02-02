@@ -528,12 +528,35 @@ display:
           row_class: ''
           default_row_class: true
       row:
-        type: fields
+        type: ui_patterns
         options:
-          default_field_elements: false
-          inline: {  }
+          default_field_elements: 0
+          inline:
+            su_news_publishing_date: 0
+            su_news_featured_media: 0
+            su_news_headline: 0
+            su_news_dek: 0
+            su_news_topics: 0
           separator: ''
-          hide_empty: false
+          hide_empty: 0
+          pattern: news-vertical-teaser
+          pattern_mapping:
+            'views_row:su_news_featured_media':
+              destination: news_vertical_teaser_image
+              weight: 0
+              plugin: views_row
+              source: su_news_featured_media
+            'views_row:su_news_headline':
+              destination: news_vertical_teaser_headline
+              weight: 1
+              plugin: views_row
+              source: su_news_headline
+            'views_row:su_news_topics':
+              destination: news_topics
+              weight: 2
+              plugin: views_row
+              source: su_news_topics
+          pattern_variant: default
       pager:
         type: some
         options:
@@ -720,7 +743,7 @@ display:
   block_3:
     display_plugin: block
     id: block_3
-    display_title: 'Vertical Teaser Pattern Block'
+    display_title: 'Vertical Teaser Term List'
     position: 3
     display_options:
       display_extenders: {  }
