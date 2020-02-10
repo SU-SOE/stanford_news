@@ -18,7 +18,7 @@ dependencies:
     - views_infinite_scroll
     - views_taxonomy_term_name_depth
 _core:
-  default_config_hash: 0UVXpCxogW361MLKpmztTYXO7q051uLpYs9fJGab82U
+  default_config_hash: FEXjlri4zccqJIyLqmxC0UZ2wwdm2bBlL5seg6l2ATY
 id: stanford_news
 label: News
 module: views
@@ -791,16 +791,33 @@ display:
         arguments: false
         pager: false
       pager:
-        type: some
+        type: infinite_scroll
         options:
           items_per_page: 0
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          views_infinite_scroll:
+            button_text: 'Load More'
+            automatically_load_content: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
