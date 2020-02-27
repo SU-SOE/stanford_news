@@ -35,6 +35,11 @@ news-card:
       label: "Topics"
       description: "Associated terms from the topics taxonomy"
       preview: "Link to taxonomy terms"
+    news_source:
+      type: text
+      label: "Source"
+      description: "The source field."
+      preview: "I am a link"
   use: "@news/news-list/news-card.twig"
   libraries:
     - card:
