@@ -24,6 +24,7 @@ dependencies:
   - path
   - pathauto
   - stanford_media
+  - stanford_text_editor
   - taxonomy
   - text
   - ui_patterns
