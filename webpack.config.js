@@ -51,7 +51,7 @@ var webpackConfig = {
         "news-node": path.resolve(__dirname, srcJS + "/components/news-node/news-node.js"),
         "news-card": path.resolve(__dirname, srcSass + "/components/news-card/news-card.scss"),
         "newsletter": path.resolve(__dirname, srcSass + "newsletter-signup.scss"),
-        "news-assets": path.resolve(__dirname, src + "newsletter-signup.scss")
+        "news-assets": path.resolve(__dirname, srcSass + "newsletter-signup.scss")
     },
     // Where put build?
     output: {
