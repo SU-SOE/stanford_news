@@ -48,10 +48,11 @@ var webpackConfig = {
     devtool: 'source-map',
     // What build?
     entry: {
-        "news-node": path.resolve(__dirname, srcJS + "/components/news-node/news-node.js"),
-        "news-card": path.resolve(__dirname, srcSass + "/components/news-card/news-card.scss"),
-        "newsletter": path.resolve(__dirname, srcSass + "newsletter-signup.scss"),
-        "news-assets": path.resolve(__dirname, src + "newsletter-signup.scss")
+        "news-node": path.resolve(__dirname, srcJS, "news-node.js"),
+        "news-node": path.resolve(__dirname, srcSass, "components/news-node/index.scss"),
+        "news-card": path.resolve(__dirname, srcSass, "components/news-card/index.scss"),
+        "newsletter": path.resolve(__dirname, srcSass, "newsletter-signup.scss"),
+        "news-assets": path.resolve(__dirname, srcSass, "newsletter-signup.scss"),
     },
     // Where put build?
     output: {
@@ -61,7 +62,7 @@ var webpackConfig = {
     // Relative output paths for css assets.
     resolve: {
         alias: {
-            'decanter': path.resolve(npmPackage + 'decanter/core/src/img')
+            'decanter-img': path.resolve(npmPackage + 'decanter/core/src/img')
         }
     },
     // Additional module rules.
@@ -114,9 +115,10 @@ var webpackConfig = {
                         loader: 'sass-loader',
                         options: {
                             includePaths: [
-                                path.resolve(__dirname, npmPackage, "bourbon/core"),
-                                path.resolve(__dirname, npmPackage + "/decanter/core/src/scss"),
-                                path.resolve(__dirname, srcSass),
+                              path.resolve(__dirname, npmPackage),
+                              path.resolve(__dirname, npmPackage, "bourbon/core"),
+                              path.resolve(__dirname, npmPackage, "decanter/core/src/scss"),
+                              path.resolve(__dirname, srcSass),
                             ],
                             sourceMap: true,
                             lineNumbers: true,
