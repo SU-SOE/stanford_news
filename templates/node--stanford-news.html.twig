@@ -42,41 +42,43 @@
     </header>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
+  <div{{ content_attributes.addClass('content flex-container flex-container--row-gap') }}>
       {# {{ content|without('links') }} #}
-      {% if content.su_news_topics is not empty %}
+    <div class="flex-10-of-12 centered-container">
+    {% if content.su_news_topics is not empty %}
       <div class="news-topics">
           {{ content.su_news_topics }}
       </div>
       {% endif %}
       <div class="news-headline">
-      {{ content.su_news_headline }}
+        {{ content.su_news_headline }}
       </div>
       {% if content.su_news_dek is not empty %}
       <div class="news-dek">
           {{ content.su_news_dek }}
       </div>
       {% endif %}
-      {% if content.su_news_publishing_date is not empty and content.su_news_byline is not empty %}
-          {% set pipe = "|" %}
+      {%- if content.su_news_publishing_date is not empty and content.su_news_byline is not empty -%}
+          {%- set pipe = "|" -%}
       <div class="news-date-pipe-byline">
           {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
       </div>
       {% endif %}
       <div class="news-social-media">
       </div>
+    </div>
       {% if content.su_news_featured_media is not empty %}
-      <div class="news-image">
+      <div class="news-image flex-12-of-12">
         <div class="news-image-caption">
           {{ content.su_news_featured_media }}
         </div>
-      </div>
       {% endif %}
-      {% if content.su_news_featured_media is not empty %}
+        {% if content.su_news_featured_media is not empty %}
           {{ content.su_news_featured_media_caption }}
-      {% endif %}
+        {% endif %}
+      </div>
       {% if content.su_news_components is not empty %}
-      <div class="news-page-components">
+      <div class="news-page-components flex-8-of-12 centered-container">
           {{ content.su_news_components }}
       </div>
       {% endif %}
