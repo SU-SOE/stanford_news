@@ -48,7 +48,7 @@ var webpackConfig = {
     devtool: 'source-map',
     // What build?
     entry: {
-        "news-node": path.resolve(__dirname, srcJS, "news-node.js"),
+        "news-node-behavior": path.resolve(__dirname, srcJS, "main.js"),
         "news-node": path.resolve(__dirname, srcSass, "components/news-node/index.scss"),
         "news-card": path.resolve(__dirname, srcSass, "components/news-card/index.scss"),
         "newsletter": path.resolve(__dirname, srcSass, "newsletter-signup.scss"),
