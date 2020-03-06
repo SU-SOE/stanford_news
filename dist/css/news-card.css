@@ -1,6 +1,7 @@
 .su-card {
   border: 1px solid #e3e3e3;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
   display: block;
   background-color: #ffffff; }
   @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -66,6 +67,7 @@
           margin-bottom: 1.27rem; } }
       .su-card .su-card__contents > h2 > a {
         font-weight: 700;
+        -webkit-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out; }
         .su-card .su-card__contents > h2 > a:hover, .su-card .su-card__contents > h2 > a:focus {
           color: #b1040e;
@@ -106,9 +108,13 @@
     .su-card .su-card__button .su-button {
       width: auto; } }
   .su-card a .su-media__wrapper img {
-    transition: transform 0.3s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
   .su-card a:hover .su-media__wrapper img, .su-card a:focus .su-media__wrapper img {
-    transform: scale(1.03); }
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03); }
 
 .su-card--horizontal:not(.su-card--link),
 .su-card--horizontal.su-card--link > a {
@@ -296,27 +302,35 @@
     text-align: left; } }
 
 .su-card--link {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0; }
   .su-card--link > a {
     border: 1px solid #e3e3e3;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
     display: block;
     text-decoration: none;
     color: #2e2d29; }
     .su-card--link > a:hover, .su-card--link > a:focus {
       border: 1px solid #C6C6C6;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease-out; }
+      -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
+      -webkit-transition: -webkit-box-shadow 0.3s ease-out;
+      transition: -webkit-box-shadow 0.3s ease-out;
+      transition: box-shadow 0.3s ease-out;
+      transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out; }
       .su-card--link > a:hover h2, .su-card--link > a:focus h2 {
         text-decoration: underline;
         color: #b1040e;
+        -webkit-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out; }
     .su-card--link > a p {
       font-weight: 400; }
 
 .su-card--minimal {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
   background-color: inherit; }
   @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -400,7 +414,8 @@
 
 .su-card {
   border: 1px solid #e3e3e3;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
   display: block;
   background-color: #ffffff; }
   @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -466,6 +481,7 @@
           margin-bottom: 1.27rem; } }
       .su-card .su-card__contents > h2 > a {
         font-weight: 700;
+        -webkit-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out; }
         .su-card .su-card__contents > h2 > a:hover, .su-card .su-card__contents > h2 > a:focus {
           color: #b1040e;
@@ -506,9 +522,13 @@
     .su-card .su-card__button .su-button {
       width: auto; } }
   .su-card a .su-media__wrapper img {
-    transition: transform 0.3s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
   .su-card a:hover .su-media__wrapper img, .su-card a:focus .su-media__wrapper img {
-    transform: scale(1.03); }
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03); }
 
 .su-card--horizontal:not(.su-card--link),
 .su-card--horizontal.su-card--link > a {
@@ -645,28 +665,36 @@
         -ms-grid-column: 2; } }
 
 .su-card--link {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0; }
   .su-card--link > a {
     border: 1px solid #C6C6C6;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.1);
     display: block;
     text-decoration: none;
     color: #2e2d29; }
     .su-card--link > a:hover, .su-card--link > a:focus {
       border: 1px solid #C6C6C6;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.2);
       border-color: #b6b1a9;
-      transition: box-shadow 0.3s ease-out; }
+      -webkit-transition: -webkit-box-shadow 0.3s ease-out;
+      transition: -webkit-box-shadow 0.3s ease-out;
+      transition: box-shadow 0.3s ease-out;
+      transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out; }
       .su-card--link > a:hover h2, .su-card--link > a:focus h2 {
         text-decoration: underline;
         color: #b1040e;
+        -webkit-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out; }
     .su-card--link > a p {
       font-weight: 400; }
 
 .su-card--minimal {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
   background-color: inherit; }
   @media only screen and (min-width: 0) {
