@@ -44,7 +44,7 @@
 
   <div{{ content_attributes.addClass('content flex-container') }}>
       {# {{ content|without('links') }} #}
-    <div class="flex-8-of-12 centered-container">
+    <div class="flex-10-of-12">
     {% if content.su_news_topics is not empty %}
       <div class="news-topics">
           {{ content.su_news_topics }}
@@ -58,13 +58,15 @@
           {{ content.su_news_dek }}
       </div>
       {% endif %}
-      {%- if content.su_news_publishing_date is not empty and content.su_news_byline is not empty -%}
+      <div class="byline-social-media-wrapper">
+        {%- if content.su_news_publishing_date is not empty and content.su_news_byline is not empty -%}
           {%- set pipe = "|" -%}
-      <div class="news-date-pipe-byline">
+        <div class="news-date-pipe-byline">
           {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
-      </div>
-      {% endif %}
-      <div class="news-social-media">
+        </div>
+        {% endif %}
+        <div class="news-social-media">
+        </div>
       </div>
     </div>
       {% if content.su_news_featured_media is not empty %}
@@ -80,7 +82,7 @@
         {% endif %}
       </div>
       {% if content.su_news_components is not empty %}
-      <div class="news-page-components flex-6-of-12 centered-container">
+      <div class="news-page-components flex-8-of-12">
           {{ content.su_news_components }}
       </div>
       {% endif %}
