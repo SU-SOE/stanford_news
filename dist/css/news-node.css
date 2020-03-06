@@ -1,25 +1,30 @@
-.news-topics {
-  font-size: 2rem; }
-  @media only screen and (min-width: 0) {
-    .news-topics {
-      margin-top: 9.6rem; } }
-  @media only screen and (min-width: 768px) {
-    .news-topics {
-      margin-top: 10.8rem; } }
-  @media only screen and (min-width: 1500px) {
-    .news-topics {
-      margin-top: 11.4rem; } }
-  @media (max-width: 767px) {
-    .news-topics {
-      font-size: 1.6rem; } }
-  .news-topics a {
-    color: #b1040e; }
-  .news-topics span:after {
-    content: ",";
-    margin-right: 5px;
-    position: relative; }
-  .news-topics span:last-child:after {
-    content: none; }
+@media only screen and (min-width: 0) {
+  .news-topics {
+    margin-top: 9.6rem; } }
+
+@media only screen and (min-width: 768px) {
+  .news-topics {
+    margin-top: 10.8rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .news-topics {
+    margin-top: 11.4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .news-topics {
+    font-size: 2.1rem;
+    line-height: 1.7; } }
+
+.news-topics a {
+  color: #b1040e; }
+
+.news-topics span:after {
+  content: ",";
+  margin-right: 5px;
+  position: relative; }
+
+.news-topics span:last-child:after {
+  content: none; }
 
 .su-news-headline {
   font-size: 3.0517578125em; }
@@ -42,20 +47,22 @@
     .su-news-headline {
       margin-top: 3.8rem; } }
 
-.news-dek {
-  font-size: 2rem; }
-  @media (max-width: 767px) {
-    .news-dek {
-      font-size: 1.6rem; } }
-  @media only screen and (min-width: 0) {
-    .news-dek {
-      margin-bottom: 1.6rem; } }
-  @media only screen and (min-width: 768px) {
-    .news-dek {
-      margin-bottom: 1.8rem; } }
-  @media only screen and (min-width: 1500px) {
-    .news-dek {
-      margin-bottom: 1.9rem; } }
+@media only screen and (min-width: 768px) {
+  .news-dek {
+    font-size: 2.1rem;
+    line-height: 1.7; } }
+
+@media only screen and (min-width: 0) {
+  .news-dek {
+    margin-bottom: 1.6rem; } }
+
+@media only screen and (min-width: 768px) {
+  .news-dek {
+    margin-bottom: 1.8rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .news-dek {
+    margin-bottom: 1.9rem; } }
 
 .news-date-pipe-byline {
   font-size: 1.8rem;

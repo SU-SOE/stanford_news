@@ -48,7 +48,7 @@ news_node:
     base:
       dist/css/news-node.css: {}
   js:
-    dist/js/news-node.js: {}
+    dist/js/news-node.behaviors.js: {}
   dependencies:
     - core/jquery
 
