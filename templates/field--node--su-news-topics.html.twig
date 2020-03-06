@@ -21,7 +21,7 @@
     {% if multiple %}
         <div{{ attributes }}>
             {% for item in items %}
-                <span{{ item.attributes }} class="su-link">{{ item.content }}</span>
+                <span{{ item.attributes }}>{{ item.content }}</span>
             {% endfor %}
         </div>
     {% else %}

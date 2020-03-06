@@ -25,13 +25,13 @@
   font-size: 3.0517578125em; }
   @media only screen and (min-width: 0) {
     .su-news-headline {
-      margin-bottom: 3.2rem; } }
+      margin-bottom: 4rem; } }
   @media only screen and (min-width: 768px) {
     .su-news-headline {
-      margin-bottom: 3.6rem; } }
+      margin-bottom: 4.5rem; } }
   @media only screen and (min-width: 1500px) {
     .su-news-headline {
-      margin-bottom: 3.8rem; } }
+      margin-bottom: 4.75rem; } }
   @media only screen and (min-width: 0) {
     .su-news-headline {
       margin-top: 3.2rem; } }
@@ -49,13 +49,13 @@
       font-size: 1.6rem; } }
   @media only screen and (min-width: 0) {
     .news-dek {
-      margin-bottom: 1.6rem; } }
+      margin-bottom: 2.31rem; } }
   @media only screen and (min-width: 768px) {
     .news-dek {
-      margin-bottom: 1.8rem; } }
+      margin-bottom: 2.6rem; } }
   @media only screen and (min-width: 1500px) {
     .news-dek {
-      margin-bottom: 1.9rem; } }
+      margin-bottom: 2.74rem; } }
 
 .news-date-pipe-byline {
   font-size: 1.8rem;
@@ -65,53 +65,50 @@
       font-size: 1.6rem; } }
   @media only screen and (min-width: 0) {
     .news-date-pipe-byline {
-      margin-bottom: 11.2rem; } }
+      margin-bottom: 9.6rem; } }
   @media only screen and (min-width: 768px) {
     .news-date-pipe-byline {
-      margin-bottom: 12.6rem; } }
+      margin-bottom: 10.8rem; } }
   @media only screen and (min-width: 1500px) {
     .news-date-pipe-byline {
-      margin-bottom: 13.3rem; } }
+      margin-bottom: 11.4rem; } }
   .news-date-pipe-byline > div {
     display: inline-block; }
 
-.su-news-featured-media-caption {
+.news-image-caption .su-news-featured-media-caption {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4d4f53;
   font-size: 1.4rem;
-  line-height: 1.3; }
+  line-height: 1.3;
+  text-align: center; }
   @media only screen and (min-width: 768px) {
-    .su-news-featured-media-caption {
+    .news-image-caption .su-news-featured-media-caption {
       font-size: 1.6rem; } }
   @media only screen and (min-width: 0) {
-    .su-news-featured-media-caption {
-      padding: 1.6rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
   @media only screen and (min-width: 768px) {
-    .su-news-featured-media-caption {
-      padding: 1.8rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem; } }
   @media only screen and (min-width: 1500px) {
-    .su-news-featured-media-caption {
-      padding: 1.9rem; } }
-
-.field-media-image-caption {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #4d4f53;
-  font-size: 1.4rem;
-  line-height: 1.3; }
-  @media only screen and (min-width: 768px) {
-    .field-media-image-caption {
-      font-size: 1.6rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      padding-left: 1.9rem;
+      padding-right: 1.9rem; } }
   @media only screen and (min-width: 0) {
-    .field-media-image-caption {
-      padding: 1.6rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      margin-top: 2.31rem;
+      margin-bottom: 2.31rem; } }
   @media only screen and (min-width: 768px) {
-    .field-media-image-caption {
-      padding: 1.8rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      margin-top: 2.6rem;
+      margin-bottom: 2.6rem; } }
   @media only screen and (min-width: 1500px) {
-    .field-media-image-caption {
-      padding: 1.9rem; } }
+    .news-image-caption .su-news-featured-media-caption {
+      margin-top: 2.74rem;
+      margin-bottom: 2.74rem; } }
 
 .news-social-media {
   font-size: 1.8rem;
@@ -121,10 +118,105 @@
       font-size: 1.6rem; } }
   .news-social-media div {
     display: inline-block; }
-  .news-social-media img {
-    width: auto;
-    height: 40px;
-    margin-right: -10px; }
+
+.mailchimp-magazine-block #mc_embed_signup_scroll {
+  border: 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: #f4f4f4;
+  text-align: center; }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-bottom: 4rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-bottom: 4.5rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-bottom: 4.75rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-left: 4rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-left: 4.5rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-left: 4.75rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-right: 4rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-right: 4.5rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      padding-right: 4.75rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      margin-bottom: 9.6rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      margin-bottom: 10.8rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll {
+      margin-bottom: 11.4rem; } }
+  .mailchimp-magazine-block #mc_embed_signup_scroll p {
+    font-size: 2rem; }
+    @media (max-width: 767px) {
+      .mailchimp-magazine-block #mc_embed_signup_scroll p {
+        font-size: 1.6rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll form {
+      margin-bottom: 1.6rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll form {
+      margin-bottom: 1.8rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll form {
+      margin-bottom: 1.9rem; } }
+  .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
+    font-size: 1.5625em;
+    letter-spacing: -0.012em;
+    margin: 0; }
+    @media only screen and (min-width: 0) {
+      .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
+        padding-top: 4rem; } }
+    @media only screen and (min-width: 768px) {
+      .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
+        padding-top: 4.5rem; } }
+    @media only screen and (min-width: 1500px) {
+      .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
+        padding-top: 4.75rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll p {
+      margin-top: 1.6rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll p {
+      margin-top: 1.8rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll p {
+      margin-top: 1.9rem; } }
+  .mailchimp-magazine-block #mc_embed_signup_scroll .mc_signup_submission_wrapper {
+    display: flex;
+    justify-content: center; }
+  .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group {
+    float: none; }
+    .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
+      font-size: 2rem; }
+      @media (max-width: 767px) {
+        .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
+          font-size: 1.6rem; } }
+  @media only screen and (min-width: 0) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll .button {
+      margin-left: 1.6rem; } }
+  @media only screen and (min-width: 768px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll .button {
+      margin-left: 1.8rem; } }
+  @media only screen and (min-width: 1500px) {
+    .mailchimp-magazine-block #mc_embed_signup_scroll .button {
+      margin-left: 1.9rem; } }
+  .mailchimp-magazine-block #mc_embed_signup_scroll form {
+    margin-bottom: 0; }
 
 
 /*# sourceMappingURL=news-node.css.map*/
