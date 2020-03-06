@@ -46,11 +46,6 @@ var webpackConfig = {
   name: 'stanford_basic',
   // Allows for map files.
   devtool: 'source-map',
-  externals: {
-    jquery: 'jQuery',
-    Drupal: 'Drupal',
-    drupalSettings: 'drupalSettings',
-  },
   // What build?
   entry: {
     "news-node.behaviors":  path.resolve(srcJS,   "news-node.behaviors.js"),
@@ -67,8 +62,8 @@ var webpackConfig = {
   // Relative output paths for css assets.
   resolve: {
     alias: {
-      'decanter-assets':  path.resolve(npmPackage, 'decanter/core/src/img'),
-      'fa-fonts':         path.resolve(npmPackage, '@fortawesome/fontawesome-free/webfonts')
+      '@decanter-assets':  path.resolve(npmPackage, 'decanter/core/src/img'),
+      '@fa-fonts':         path.resolve(npmPackage, '@fortawesome/fontawesome-free/webfonts')
     }
   },
   // Additional module rules.
