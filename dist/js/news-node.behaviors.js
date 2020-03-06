@@ -95,16 +95,16 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _news_page_behavior_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./news.page.behavior.js */ "./lib/js/news.page.behavior.js");
-/* harmony import */ var _news_page_behavior_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_news_page_behavior_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _stanford_news_behavior_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stanford_news.behavior.js */ "./lib/js/stanford_news.behavior.js");
+/* harmony import */ var _stanford_news_behavior_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stanford_news_behavior_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
 /***/ }),
 
-/***/ "./lib/js/news.page.behavior.js":
-/*!**************************************!*\
-  !*** ./lib/js/news.page.behavior.js ***!
-  \**************************************/
+/***/ "./lib/js/stanford_news.behavior.js":
+/*!******************************************!*\
+  !*** ./lib/js/stanford_news.behavior.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -116,7 +116,7 @@ __webpack_require__.r(__webpack_exports__);
  * Webpack wraps everything in enclosures and hides the global variables from
  * scripts so special handling is needed.
  */
-window.Drupal.behaviors.news = {
+window.Drupal.behaviors.stanford_news = {
   // Attach Drupal Behavior.
   attach: function attach(context, settings) {
     (function ($) {
