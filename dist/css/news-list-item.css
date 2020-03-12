@@ -1,0 +1,18 @@
+h1 {
+  font-size: 2.44140625em;
+  letter-spacing: -0.016em; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2.0751953125em; } }
+  @media only screen and (min-width: 0) {
+    h1 {
+      margin-bottom: 11.2rem; } }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      margin-bottom: 12.6rem; } }
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      margin-bottom: 13.3rem; } }
+
+
+/*# sourceMappingURL=news-list-item.css.map*/

@@ -52,6 +52,7 @@ var webpackConfig = {
     "news-node.behaviors":  path.resolve(srcJS,   "news-node.behaviors.js"),
     "news-node":            path.resolve(srcSass, "components/news-node/index.scss"),
     "news-card":            path.resolve(srcSass, "components/news-card/index.scss"),
+    "news-list-item":            path.resolve(srcSass, "components/news-list-item/index.scss"),
     "newsletter":           path.resolve(srcSass, "components/newsletter/index.scss"),
     "news-assets":          path.resolve(srcSass, "components/newsletter/index.scss")
   },

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+//
+// Card
+//
+// One of the primary building block components. This card component comes with
+// several fields to ensure flexibility.
+//
+// .su-card--horizontal - Postcard with image on the side.
+// .su-card--link - Whole card is a clickable link with no link buttons or CTA link.
+// .su-card--minimal - No border, material shadow or background color. Do not use this with the .su-card--link variant.
+//
+// Markup: ../templates/components/card/card.twig
+//
+// Style guide: Components.Card
+//
+
+//@import 'decanter/core/src/scss/components/card/index';
+
+h1 {
+  @include type-a;
+  @include modular-spacing('margin-bottom', 8);
+}
+
+.su-list-item {
+
+}
