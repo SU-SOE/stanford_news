@@ -17,6 +17,7 @@ const OptimizeCSSAssetsPlugin =   require("optimize-css-assets-webpack-plugin");
 const WebpackAssetsManifest =     require("webpack-assets-manifest");
 const ExtraWatchWebpackPlugin =   require("extra-watch-webpack-plugin");
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const CopyWebpackPlugin =         require('copy-webpack-plugin');
 
 // /////////////////////////////////////////////////////////////////////////////
 // Paths ///////////////////////////////////////////////////////////////////////
@@ -211,6 +212,10 @@ var webpackConfig = {
         srcDir + '/**/*.json'
       ]
     }),
+    // Manually copying any assets in lib/assets/svg located in js files
+    new CopyWebpackPlugin([
+      {from:'lib/assets/svg',to:'../assets/svg'}
+    ]),
   ]
 };
 
