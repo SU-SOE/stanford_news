@@ -38,8 +38,7 @@
       clear: both;
       font-weight: 700;
       line-height: 1.2;
-      font-size: 0.8em;
-      text-transform: uppercase;
+      font-size: 0.9em;
       display: block; }
       @media only screen and (min-width: 0) {
         .su-card .su-card__contents > span {
@@ -452,8 +451,7 @@
       clear: both;
       font-weight: 700;
       line-height: 1.2;
-      font-size: 0.8em;
-      text-transform: uppercase;
+      font-size: 0.9em;
       display: block; }
       @media only screen and (min-width: 0) {
         .su-card .su-card__contents > span {

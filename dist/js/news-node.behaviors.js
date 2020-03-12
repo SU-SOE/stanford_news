@@ -120,13 +120,10 @@ window.Drupal.behaviors.stanford_news = {
   // Attach Drupal Behavior.
   attach: function attach(context, settings) {
     (function ($) {
-      var soeSocialPathToImages = '/sites/default/files';
-      var pathArray = window.location.pathname.split('/');
-      var soeEnv = '';
-      var path = pathArray[1];
-      $('.news-social-media').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="' + location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_linkedin_icon_blue.svg" alt="linkedin share"></a></div>');
-      $('.news-social-media').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="' + location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_twitter_icon_blue.svg" alt="twitter share"></a></div>');
-      $('.news-social-media').prepend('<div class="widget-wrapper-fb"><a href="" class="share-fb"><img src="' + location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_facebook_icon_blue.svg" alt="facebook share"></a></div>'); // Get the current URL
+      var socialImagePath = '../modules/custom/stanford_news/lib/assets/svg';
+      $('.news-social-media').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="' + socialImagePath + '/soe_linkedin_icon_blue.svg" alt="linkedin share"></a></div>');
+      $('.news-social-media').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="' + socialImagePath + '/soe_twitter_icon_blue.svg" alt="twitter share"></a></div>');
+      $('.news-social-media').prepend('<div class="widget-wrapper-fb"><a href="" class="share-fb"><img src="' + socialImagePath + '/soe_facebook_icon_blue.svg" alt="facebook share"></a></div>'); // Get the current URL
 
       var pathname = window.location,
           // Data
