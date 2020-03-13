@@ -22,6 +22,50 @@ h1 {
   @include modular-spacing('margin-bottom', 8);
 }
 
-.su-list-item {
+.su-news-list {
+  @include margin(0);
+  @include modular-spacing('padding', 3 null);
+
+  list-style: none;
+  overflow: auto;
+
+  border-bottom: 1px solid $su-color-cool-grey-25;
+
+  .su-news-list-item {
+
+  }
+
+  .su-news-list-item__date {
+    @include small-paragraph;
+  }
+
+  .su-news-list-item__media {
+    float: right;
+  }
+
+  a {
+    color: $su-color-bright-red;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  .su-news-list-item__dek {
+    @include big-paragraph;
+  }
+}
+
+// Load more button
+
+.js-pager__items {
+  @include modular-spacing('margin-top', 5);
+
+  .pager__item {
+
+    .button {
+      @include button-big;
+    }
+  }
 
 }
