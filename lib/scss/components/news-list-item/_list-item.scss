@@ -32,7 +32,9 @@ h1 {
   border-bottom: 1px solid $su-color-cool-grey-25;
 
   .su-news-list-item {
-
+    &:last-of-type {
+      @include modular-spacing('margin-bottom', 8);
+    }
   }
 
   .su-news-list-item__date {
@@ -40,19 +42,26 @@ h1 {
   }
 
   .su-news-list-item__media {
+    @include modular-spacing('margin-left', 3);
+
     float: right;
   }
 
   a {
+    @include link;
+
     color: $su-color-bright-red;
   }
 
   h2 {
+    @include modular-spacing('margin-bottom', 1);
+
     display: inline;
   }
 
   .su-news-list-item__dek {
     @include big-paragraph;
+    @include modular-spacing('margin-bottom', 2);
   }
 }
 

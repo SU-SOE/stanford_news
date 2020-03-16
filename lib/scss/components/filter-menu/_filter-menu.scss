@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+//
+// Filter menu
+//
+
+.news-topics {
+  @include modular-spacing('padding', 3);
+
+  border: 1px solid $su-color-cool-grey-25;
+
+  .menu {
+    .menu-item {
+      @include small-paragraph;
+    }
+  }
+
+}
