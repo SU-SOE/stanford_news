@@ -9,9 +9,40 @@
 
   border: 1px solid $su-color-cool-grey-25;
 
+  h2 {
+    @include type-e;
+    @include modular-spacing('padding-bottom', 2);
+  }
+
   .menu {
+    @include margin(0);
+    @include padding(0);
+
     .menu-item {
+      @include modular-spacing('padding-bottom', 2);
       @include small-paragraph;
+      @include modular-spacing('padding-left', 0);
+
+      a {
+        color: $su-color-black;
+        text-decoration: none;
+      }
+    }
+
+    .menu-item--active-trail {
+      &:before {
+        @include small-paragraph;
+
+        color: $su-color-bright-blue;
+        content: "\f00c";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900; ///* must have this in the new icons
+        left: 45px;
+        position: absolute;
+      }
+      .is-active {
+        color: $su-color-bright-blue;
+      }
     }
   }
 
