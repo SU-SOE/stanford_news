@@ -9,9 +9,26 @@
 
   border: 1px solid $su-color-cool-grey-25;
 
-  h2 {
+  .collapsable-menu {
     @include type-e;
     @include modular-spacing('padding-bottom', 2);
+
+    .fas {
+      color: $su-color-bright-blue;
+      float: right;
+    }
+
+    @include grid-media-between('xs', 'md') {
+      &:before {
+        @include small-paragraph;
+        @include padding(null 15px null null);
+
+        color: $su-color-bright-blue;
+        content: "\f1de";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600;
+      }
+    }
   }
 
   .menu {
@@ -36,7 +53,7 @@
         color: $su-color-bright-blue;
         content: "\f00c";
         font-family: 'Font Awesome 5 Free';
-        font-weight: 900; ///* must have this in the new icons
+        font-weight: 600; ///* must have this in the new icons
         left: 45px;
         position: absolute;
       }

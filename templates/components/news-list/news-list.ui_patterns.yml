@@ -1,5 +1,5 @@
 news-card:
-  label: News Card
+  label: News List Item
   description: "Building block component for the news list page."
   variants:
     default:
