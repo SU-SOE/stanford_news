@@ -13,8 +13,7 @@
     @include type-e;
     @include modular-spacing('padding-bottom', 2);
 
-    .fas {
-      color: $su-color-bright-blue;
+    .su-link--jump {
       float: right;
     }
 

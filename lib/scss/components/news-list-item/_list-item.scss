@@ -22,6 +22,12 @@ h1 {
   @include modular-spacing('margin-bottom', 8);
 }
 
+.views-infinite-scroll-content-wrapper {
+  > div:last-of-type {
+    @include modular-spacing('margin-bottom', 8);
+  }
+}
+
 .su-news-list {
   @include margin(0);
   @include modular-spacing('padding', 3 null);
