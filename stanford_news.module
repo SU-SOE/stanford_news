@@ -5,6 +5,8 @@
  * stanford_news.module
  */
 
+use Drupal\Component\Utility\Html;
+
 /**
  * Implements hook_theme().
  */
@@ -21,6 +23,9 @@ function stanford_news_theme() {
     'signup_block' => [
       'variables' => [],
       'template' => 'signup-block'
+    ],
+    'block__menu_block__news_topics' => [
+      'template' => 'block--menu-block--news-topics'
     ]
   ];
 }
@@ -34,6 +39,22 @@ function stanford_news_preprocess_block(&$variables) {
       $variables['#attached']['library'][] = 'stanford_news/newsletter_signup';
     }
   }
+  $variables['attributes']['class'][] = Html::cleanCssIdentifier(_stanford_news_change_characters($variables['base_plugin_id']));
+  $variables['attributes']['class'][] = Html::cleanCssIdentifier(_stanford_news_change_characters($variables['derivative_plugin_id']));
+}
+
+/**
+ * Html::cleanCssIdentifier() doesn't remove ":" so we have to clean a little
+ * more.
+ *
+ * @param string $string
+ *   String to clean.
+ *
+ * @return string
+ *   Cleaned string.
+ */
+function _stanford_news_change_characters($string) {
+  return preg_replace("/[^a-zA-Z\d\s]/", '-', $string);
 }
 
 /**
@@ -44,5 +65,41 @@ function stanford_news_preprocess_node(&$variables) {
   //check content type
   if ($node->getType() == 'stanford_news') {
     $variables['#attached']['library'][] = 'stanford_news/news_node';
+  }
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function stanford_news_preprocess_menu(&$variables, $hook) {
+  $current_path = \Drupal::request()->getRequestUri();
+
+  if ($variables['menu_name'] !== "main") {
+    return;
+  }
+
+  foreach($variables['items'] as &$item) {
+    $menu_item = [$item];
+    _stanford_news_menu_process_submenu($menu_item, $current_path);
+    $item = $menu_item[0];
+  }
+}
+
+/**
+ * Set active and active-trail class for sub-menus recursively.
+ *
+ * @param  array $submenu      The `$item['below']` structure from a menu array.
+ * @param  string $current_path A path to match against for "on this page".
+ */
+function _stanford_news_menu_process_submenu(&$submenu, $current_path) {
+  foreach ($submenu as &$item) {
+    $item_path = (is_string($item['url'])) ? $item['url'] : $item['url']->toString();
+    if ($item_path == $current_path) {
+      $item['is_active'] = TRUE;
+    }
+
+    if ($item['in_active_trail'] && count($item['below'])) {
+      _stanford_news_menu_process_submenu($item['below'], $current_path);
+    }
   }
 }

@@ -5,10 +5,6 @@ news-card:
     default:
       label: Default
       description: "Default"
-    postcard:
-      label: Postcard
-      description: "Horizontal postcard type card"
-      modifier_class: su-news-card--horizontal
   fields:
     news_card_image:
       type: text
@@ -40,7 +36,7 @@ news-card:
       label: "Source"
       description: "The source field."
       preview: "I am a link"
-  use: "@news/news-list/news-card.twig"
+  use: "@news/news-list/news-item-list.twig"
   libraries:
     - card:
         css:

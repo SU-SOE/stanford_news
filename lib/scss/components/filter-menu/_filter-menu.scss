@@ -23,9 +23,9 @@
         @include padding(null 15px null null);
 
         color: $su-color-bright-blue;
-        content: "\f1de";
+        content: "\f1de"; // Placeholder Icon until SU ones in place.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600;
+        font-weight: 600; // Need this for the new version of FA. Will go away later.
       }
     }
   }
@@ -50,15 +50,21 @@
         @include small-paragraph;
 
         color: $su-color-bright-blue;
-        content: "\f00c";
+        content: "\f00c"; ///* Need to switch to the SU icons.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600; ///* must have this in the new icons
+        font-weight: 600; // Need this for the new version of FA. Will go away later.
         left: 45px;
         position: absolute;
       }
       .is-active {
         color: $su-color-bright-blue;
       }
+    }
+  }
+  // Filter open/close
+  @include grid-media-between('xs', 'md') {
+    .menu {
+      display: none;
     }
   }
 

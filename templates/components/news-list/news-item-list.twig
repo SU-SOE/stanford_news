@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * List Component.
+ * Card Component.
  *
  * Basic building block component with the following variants:
  *   - Vertical (default): An image above text content
@@ -27,68 +27,71 @@
 
 {# For variant where whole card is a link, suppress all other links within the component #}
 {%- if "su-card--link" in modifier_class -%}
-    {%- set allow_links = false -%}
+  {%- set allow_links = false -%}
 {%- else -%}
-    {%- set allow_links = true -%}
+  {%- set allow_links = true -%}
 {%- endif -%}
 
-<div {{ attributes }} class="su-list-item {{ modifier_class }}">
-  {% if loop.last %}{% set classes = classes|merge(["last"]) %}{% endif %}
-    {# For variant where whole card is a link, add an <a> within the outer wrapper <div> #}
-    {%- if allow_links == false %}
-    <a href="{{ card_link }}" {{ card_cta_attributes }}>
-        {%- endif -%}
+<ul class="su-news-list {{ modifier_class }}">
+  {# For variant where whole card is a link, add an <a> within the outer wrapper <div> #}
+  {%- if allow_links == false %}
+  <a href="{{ card_link }}" {{ card_cta_attributes }}>
+    {%- endif -%}
 
-        {# Card Image #}
-        {% if news_card_image is not empty -%}
-            {{ news_card_image }}
-        {%- endif -%}
+    {# Card Image #}
+    {% if news_card_image is not empty -%}
+      <li class="su-news-list-item__media">{{ news_card_image }}</li>
+    {%- endif -%}
 
-        <div class="su-card__contents">
+    {#        <div class="su-list-item__contents">#}
 
-            {# News Card Date #}
-            {%- block block_news_card_date %}
-                {% if news_card_publishing_date is not empty %}
-                    <span>{{ news_card_publishing_date }}</span>
-                {% endif -%}
-            {% endblock -%}
+    {# News Card Date #}
+    {%- block block_news_card_date %}
+      {% if news_card_publishing_date is not empty %}
+        <li class="su-news-list__item-date">{{ news_card_publishing_date }}</li>
+      {% endif -%}
+    {% endblock -%}
 
-            {# Card Headline #}
-            {%- block block_news_card_headline  %}
-                {%- if news_card_headline is not empty %}
-                    <h2>
-                        {%- if news_card_headline_link and allow_links -%}
-                        <a href="{{ news_card_headline_link }}" {{ news_card_attributes }}>
-                            {%- endif -%}
-                            {{- news_card_headline -}}
-                            {% if news_card_headline_link and allow_links -%}
-                        </a>
-                        {%- endif -%}
-                    </h2>
-                {% endif -%}
-            {% endblock -%}
+    {# Card Headline #}
+    {%- block block_news_card_headline  %}
+      {%- if news_card_headline is not empty %}
+        <li class="su-news-list__item">
+          <h2>
+            {%- if news_card_headline_link and allow_links -%}
+            <a href="{{ news_card_headline_link }}" {{ news_card_attributes }}>
+              {%- endif -%}
+              {{- news_card_headline -}}
+              {% if news_card_headline_link and allow_links -%}
+            </a>
+            {%- endif -%}
+          </h2>
+        </li>
+      {% endif -%}
+    {% endblock -%}
 
-            {# An open field for body content #}
-            {{ news_card_dek }}
+    {# An open field for body content #}
+    <li  class="su-news-list-item__dek">{{ news_card_dek }}</li>
 
-            {# Card Topics #}
-            {%- block block_news_card_topics  %}
-                {%- if news_card_topics is not empty %}
-                    <h2>
+    {# Card Topics #}
+    {%- block block_news_card_topics  %}
+      {%- if news_card_topics is not empty %}
+        <li class="su-news-list__item">
+                    <span>
                         {%- if news_card_topics_link and allow_links -%}
                         <a href="{{ news_card_topics_link }}" {{ news_card_topics_attributes }}>
                             {%- endif -%}
-                            {{- news_card_topics -}}
-                            {% if news_card_topics_link and allow_links -%}
+                          {{- news_card_topics -}}
+                          {% if news_card_topics_link and allow_links -%}
                         </a>
                         {%- endif -%}
-                    </h2>
-                {% endif -%}
-            {% endblock -%}
+                    </span>
+        </li>
+      {% endif -%}
+    {% endblock -%}
 
-        </div> {# /su-card__contents #}
+    {#        </div> #}{# /su-card__contents #}
 
-        {%- if allow_links == false %}
-    </a>
-    {%- endif -%}
-</div>
+    {%- if allow_links == false %}
+  </a>
+  {%- endif -%}
+</ul>
