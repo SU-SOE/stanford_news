@@ -66,6 +66,20 @@
     .menu {
       display: none;
     }
+    .collapsable-menu.show + .menu {
+      display: block;
+    }
   }
+
+  // Filter open/close
+  @include grid-media-between('lg', 'xl') {
+    .menu {
+      display: block;
+    }
+    .collapsable-menu.show + .menu {
+      display: none;
+    }
+  }
+
 
 }
