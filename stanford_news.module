@@ -39,6 +39,9 @@ function stanford_news_preprocess_block(&$variables) {
     if ($variables['elements']['#id'] == 'newslettersignup') {
       $variables['#attached']['library'][] = 'stanford_news/newsletter_signup';
     }
+//    if ($variables['elements']['#id'] == 'menu_blocknews_topics_menu') {
+      $variables['#attached']['library'][] = 'stanford_news/news_list';
+//    }
   }
   $variables['attributes']['class'][] = Html::cleanCssIdentifier(_stanford_news_change_characters($variables['base_plugin_id']));
   $variables['attributes']['class'][] = Html::cleanCssIdentifier(_stanford_news_change_characters($variables['derivative_plugin_id']));

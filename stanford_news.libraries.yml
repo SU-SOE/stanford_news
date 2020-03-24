@@ -52,6 +52,12 @@ news_node:
   dependencies:
     - core/jquery
 
+news_list:
+  version: VERSION
+  js:
+    dist/js/news-list.behaviors.js: {}
+  dependencies:
+    - core/jquery
 
 newsletter_signup:
   version: VERSION
