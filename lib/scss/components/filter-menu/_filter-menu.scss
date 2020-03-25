@@ -86,7 +86,7 @@
   }
 
   // Filter open/close
-  @include grid-media-between('xs', 'xl') {
+  @include grid-media('xl') {
     .menu {
       display: block;
     }
