@@ -72,6 +72,16 @@
       top: -10px;
       width: auto;
     }
+
+    .widget-wrapper-forward,
+    .widget-wrapper-print {
+      img {
+        @include padding(null 10px);
+
+        height: 25px;
+        top: -18px;
+      }
+    }
   }
 
   .news-image-caption {
