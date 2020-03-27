@@ -26,4 +26,4 @@ news-vertical-teaser:
     - card:
         css:
           component:
-            ../../../dist/css/news-vertical-teaser.css: { weight:1000 }
+            ../../../dist/css/news-vertical-teaser.css: { weight: 1000 }
