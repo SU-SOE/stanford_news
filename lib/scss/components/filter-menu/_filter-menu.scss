@@ -19,7 +19,7 @@
 
   .collapsable-menu {
     @include type-e;
-    @include modular-spacing('margin-bottom', 2); // This is the practical exmaple of the margin/padding.
+    @include modular-spacing('margin-bottom', 2); // This is the practical example of the margin/padding.
 
     cursor: pointer;
     display: inline-block;
