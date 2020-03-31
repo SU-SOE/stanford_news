@@ -41,4 +41,4 @@ news-card:
     - card:
         css:
           component:
-            ../../../dist/css/news-list-item.css: { weight:1000 }
+            ../../../dist/css/news-card.css: { weight: 1000 }
