@@ -54,6 +54,9 @@ news_node:
 
 news_list:
   version: VERSION
+  css:
+    base:
+      dist/css/news-list-item.css: {}
   js:
     dist/js/news-list.behaviors.js: {}
   dependencies:

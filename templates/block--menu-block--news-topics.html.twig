@@ -39,7 +39,7 @@
   'menu--' ~ derivative_plugin_id|clean_class,
 ]
 %}
-{% set heading_class = 'collapsable-menu' %}
+{% set menu_class = 'collapsable-menu' %}
 {% set heading_id = (configuration.id ~ '-menu')|clean_id %}
 
 <div {{ attributes.addClass(classes) }} {{ attributes.setAttribute('id', heading_id) }}>
@@ -48,7 +48,7 @@
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
   {% endif %}
   {{ title_prefix }}
-  <a{{ title_attributes.setAttribute('class', heading_class) }}>{{ configuration.label }} <span class="su-link su-link--jump"></span></a>
+  <a{{ title_attributes.setAttribute('class', menu_class) }}>{{ configuration.label }} <span class="su-link su-link--jump"></span></a>
   {{ title_suffix }}
 
   {# Menu. #}
