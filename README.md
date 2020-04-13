@@ -24,7 +24,17 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 Configuration
 ---
 
-Nothing special needed.
+- Pull in this branch.
+- Build.
+- Add terms to the Topics taxonomy. They have a generated path.
+- Create a menu with your taxonomy terms.
+- Go to /admin/structure/types/manage/stanford_page/display and allow Topics Menus block to be added via the Layout Builder.
+- Create articles and tag them with a term from the taxonomy.
+- Create term list pages.
+- They need paths like this: /news/term-1 (term name) or /news/all
+- On this page, use the layout builder to add your menu.
+- On this page, add the News Terms block.
+- On this page, add the Newsletter Sign up block.
 
 
 Troubleshooting
