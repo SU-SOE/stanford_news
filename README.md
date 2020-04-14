@@ -8,7 +8,13 @@ Changelog: [Changelog.md](CHANGELOG.md)
 Description
 ---
 
-Stanford News feature provides an out of the box solution for displaying news content on your website. This feature contains a content type, fields, a news page layout, and taxonomy. This module is a great replacement for the default Article content type.
+Stanford News feature provides an out of the box solution for displaying news content on your website. This module is a great replacement for the default Article content type.
+Specifically, This module provides:
+* A news content type with fields such as topics, headline, dek, byline, etc., and text area paragraphs. 
+* A **Topics** taxonomy that works with news items
+* A **Topics menu**  to use with the Topics taxonomy
+* Taxonomy term layout builder layouts for **News List Item**, **News Banner**, and **News Vertical Teaser**
+
 
 Accessibility
 ---
@@ -23,18 +29,26 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 
 Configuration
 ---
+Example use of this module:
+* If not enabled, enable module and clear cache
+* Add your news taxonomy terms to the Topics taxonomy:  
+  * Navigate to  Structure > Taxonomy > Topics (/admin/structure/menu/manage/news-topics)
+  * Click on +Add term
+  * Add the new term
+  * In the URL alias field add the path /news/term-name
+  * Save.
 
-- Pull in this branch.
-- Build.
-- Add terms to the Topics taxonomy. They have a generated path.
-- Create a menu with your taxonomy terms.
-- Go to /admin/structure/types/manage/stanford_page/display and allow Topics Menus block to be added via the Layout Builder.
-- Create articles and tag them with a term from the taxonomy.
-- Create term list pages.
-- They need paths like this: /news/term-1 (term name) or /news/all
-- On this page, use the layout builder to add your menu.
-- On this page, add the News Terms block.
-- On this page, add the Newsletter Sign up block.
+* Add your terms to the Topics Menu 
+  * Navigate to Structure > Menus > Topics (/admin/structure/taxonomy/manage/stanford_topics/overview) 
+  * Create layout for the term list pages 
+  * Navigate to Structure > Taxonomy > Topics > Manage Display (admin/structure/taxonomy/manage/stanford_topics/overview/display)
+  * Click on Manage layout
+  * add your menu.
+  * add the News Terms block.
+  * add the Newsletter Sign up block.
+  
+* Add a news item and tag it with the appropriate topics: 
+  * Content > Add content > Stanford News (/node/add/stanford_news)
 
 
 Troubleshooting
