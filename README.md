@@ -40,7 +40,7 @@ Example use of this module:
 
 * Add your terms to the Topics Menu 
   * Navigate to Structure > Menus > Topics (/admin/structure/taxonomy/manage/stanford_topics/overview) 
-  * Create layout for the term list pages 
+* Create layout for the term list pages 
   * Navigate to Structure > Taxonomy > Topics > Manage Display (admin/structure/taxonomy/manage/stanford_topics/overview/display)
   * Click on Manage layout
   * add your menu.
