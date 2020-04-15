@@ -19,7 +19,7 @@
     "drupal/views_taxonomy_term_name_depth": "^6.0",
     "drupal/views_infinite_scroll": "^1.6",
     "drupal/viewfield": "^3.0@beta",
-    "su-sws/jumpstart_ui": "^8.1.0@alpha"
+    "su-sws/jumpstart_ui": "dev-8.x-1.x"
   },
   "extra": {
     "enable-patching": true,
