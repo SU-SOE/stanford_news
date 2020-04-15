@@ -42,7 +42,7 @@ Example use of this module:
   * Navigate to Structure > Menus > Topics (/admin/structure/taxonomy/manage/stanford_topics/overview) 
 * Create layout for the term list pages 
   * Navigate to Structure > Taxonomy > Topics > Manage Display (admin/structure/taxonomy/manage/stanford_topics/overview/display)
-  * Click on Manage layout
+  * Click on Manage layout - What layout? 
   * add your menu.
   * add the News Terms block.
   * add the Newsletter Sign up block.
