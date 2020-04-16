@@ -51,7 +51,7 @@ class SignupBlock extends BlockBase implements BlockPluginInterface {
     $config = $this->getConfiguration();
     return [
       '#theme' => 'signup_block',
-      'configuration' => $config,
+      '#configuration' => $config,
     ];
   }
 

@@ -48,10 +48,9 @@ Developer
 If you wish to develop on this module you will most likely need to compile some new css. Please use the sass structure provided and compile with the sass compiler packaged in this module. To install:
 
 ```
+nvm use
 npm install
-grunt watch
- or
-grunt devmode
+npm run publish
 ```
 
 Contribution / Collaboration
