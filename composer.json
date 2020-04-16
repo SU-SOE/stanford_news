@@ -13,21 +13,19 @@
     }
   ],
   "require": {
-    "drupal/auto_entitylabel": "3.x-dev",
-    "drupal/entity_print": "2.x-dev",
+    "drupal/auto_entitylabel": "3.x-dev#1dd28579f4559cc03d09ab20143b1feb48644fac",
+    "drupal/ds": "^3.5",
+    "drupal/entity_print": "^2.1",
     "drupal/page_manager": "dev-4.x#78b492786c841c5d2eb07f6d977275a76b79e46f",
-    "drupal/views_block_filter_block": "^1.0@beta",
+    "drupal/views_block_filter_block": "^1.0",
     "drupal/views_taxonomy_term_name_depth": "^6.0",
     "drupal/views_infinite_scroll": "^1.6",
-    "drupal/viewfield": "^3.0@beta",
-    "su-sws/jumpstart_ui": "^8.1.0@alpha"
+    "drupal/viewfield": "^3.0-beta5",
+    "su-sws/jumpstart_ui": "^8.1.4"
   },
   "extra": {
     "enable-patching": true,
     "patches": {
-      "drupal/core": {
-        "https://www.drupal.org/project/drupal/issues/2955877": "https://www.drupal.org/files/issues/2019-01-24/core-2955877-Fix-unsupported-operand-types-11.patch"
-      },
       "drupal/ds": {
         "https://www.drupal.org/project/ds/issues/2877487": "https://www.drupal.org/files/issues/2019-01-31/ds_fix_entities_without_fields.patch"
       },
