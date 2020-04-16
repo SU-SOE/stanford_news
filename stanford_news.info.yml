@@ -36,8 +36,6 @@ dependencies:
   - views_infinite_scroll:views_infinite_scroll
   - viewfield:viewfield
   - views_taxonomy_term_name_depth:views_taxonomy_term_name_depth
-  - page_manager:page_manager
-  - page_manager:page_manager_ui
 
 component-libraries:
   news:

@@ -19,7 +19,7 @@
 
   border: 1px solid $su-color-cool-grey-25;
 
-  .collapsable-menu {
+  .news-topics__collapsable-menu {
     @include type-e;
 
     cursor: pointer;
@@ -37,10 +37,21 @@
       @include grid-media('xl') {
         margin-bottom: 0;
 
-        &+ .menu > li.menu-item:last-of-type {
-          padding-bottom: 0;
+        & + .menu {
+          & > li {
+            &.menu-item {
+              &:last-of-type {
+                padding-bottom: 0;
+              }
+            }
+          }
         }
       }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
 
     .su-link--jump {
@@ -72,11 +83,20 @@
       a {
         color: $su-color-black;
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
       }
     }
 
-    & > li.menu-item:last-of-type {
-      padding-bottom: 0;
+    & > li {
+      &.menu-item {
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
     }
 
     .menu-item--active-trail {
@@ -101,18 +121,27 @@
     .menu {
       display: none;
     }
-    .collapsable-menu.show + .menu {
-      display: block;
+    .news-topics__collapsable-menu {
+      &.show {
+        & + .menu {
+          display: block;
+        }
+      }
     }
   }
+
 
   // Filter open/close for xl
   @include grid-media('xl') {
     .menu {
       display: block;
     }
-    .collapsable-menu.show + .menu {
-      display: none;
+    .news-topics__collapsable-menu {
+      &.show {
+        + .menu {
+          display: none;
+        }
+      }
     }
   }
 
