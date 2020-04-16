@@ -4,7 +4,6 @@
 
   div[class$="-12"] {
     @include margin(0 auto);
-
   }
 
   .news-topics {
@@ -44,10 +43,6 @@
   .byline-social-media-wrapper {
     display: flex;
     flex-wrap: wrap;
-
-    > div {
-
-    }
   }
 
   .news-date-pipe-byline {
