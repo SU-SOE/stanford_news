@@ -1,3 +1,4 @@
+uuid: c7aec497-a609-4e72-a764-3d964d87ff9c
 langcode: en
 status: true
 dependencies:
@@ -20,7 +21,7 @@ dependencies:
     - views_infinite_scroll
     - views_taxonomy_term_name_depth
 _core:
-  default_config_hash: 5Yed4oWpp_fx4twT_hRbLKGhhkIEJA4YbYchgUzqz00
+  default_config_hash: FEXjlri4zccqJIyLqmxC0UZ2wwdm2bBlL5seg6l2ATY
 id: stanford_news
 label: News
 module: views
@@ -235,7 +236,7 @@ display:
           settings:
             view_mode: default
             image_style: su_news_list
-            link: false
+            link: true
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -524,6 +525,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
+      title: News
     cache_metadata:
       max-age: -1
       contexts:
@@ -695,7 +697,7 @@ display:
           default_argument_type: raw
           default_argument_options:
             index: 1
-            use_alias: true
+            use_alias: false
           default_argument_skip_url: false
           summary_options:
             base_path: ''
