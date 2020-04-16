@@ -54,7 +54,8 @@ class SignupBlock extends BlockBase implements BlockPluginInterface {
         '#theme' => 'signup_block',
         '#configuration' => $config,
       ];
-    } else {
+    } 
+    else {
       return [];
     }
   }
