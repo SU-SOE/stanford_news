@@ -1,10 +1,6 @@
 news-card:
   label: News List Item
   description: "Building block component for the news list page."
-  variants:
-    default:
-      label: Default
-      description: "Default"
   fields:
     news_card_image:
       type: text
@@ -38,7 +34,7 @@ news-card:
       preview: "I am a link"
   use: "@news/news-list/news-item-list.twig"
   libraries:
-    - card:
+    - newscard:
         css:
           component:
             ../../../dist/css/news-card.css: { weight: 1000 }

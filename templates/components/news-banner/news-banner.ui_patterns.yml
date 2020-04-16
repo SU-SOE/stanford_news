@@ -1,10 +1,6 @@
 news-banner:
   label: News Banner
   description: "Banner for news page."
-  variants:
-    default:
-      label: Default
-      description: "Default"
   fields:
     news_banner_image:
       type: text
@@ -23,7 +19,7 @@ news-banner:
       preview: "This is the headline"
   use: "@news/news-banner/news-banner.twig"
   libraries:
-    - card:
+    - banner:
         css:
           component:
             ../../../dist/css/news-banner.css: { weight: 1000 }

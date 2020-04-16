@@ -41,14 +41,18 @@
 %}
 {% set menu_class = 'collapsable-menu' %}
 {% set heading_id = (configuration.id ~ '-menu')|clean_id %}
+{% set attributes =  attributes.setAttribute('id', heading_id) %}
+{% set attributes = attributes.addClass(classes) %}
 
-<div {{ attributes.addClass(classes) }} {{ attributes.setAttribute('id', heading_id) }}>
+<div{{ attributes }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
   {% endif %}
   {{ title_prefix }}
-  <a{{ title_attributes.setAttribute('class', menu_class) }}>{{ configuration.label }} <span class="su-link su-link--jump"></span></a>
+  <a{{ title_attributes.setAttribute('class', menu_class) }}>{{ configuration.label }}
+    <span class="su-link su-link--jump"></span>
+  </a>
   {{ title_suffix }}
 
   {# Menu. #}
