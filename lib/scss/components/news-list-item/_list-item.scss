@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+// Top Title Banner Section in Page Manager.
+.news-title-banner {
+  @include modular-spacing('margin-bottom', 4);
+
+  .su-hero,
+  .su-hero__media {
+    @include grid-media("md") {
+      min-height: auto;
+      max-height: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .su-hero__card {
+      h2 {
+        @include type-a;
+      }
+    }
+  }
+}
+
 //
 // List Item
 //
