@@ -18,7 +18,7 @@
 <ul {{ attributes }} class="su-news-list {{ modifier_class }}">
   {# News List Image #}
   {%- block block_news_list_image %}
-    {% if news_list_image|render|striptags('<drupal-render-placeholder>') is not empty -%}
+    {% if news_list_image|render|striptags('<drupal-render-placeholder><img><picture>') is not empty -%}
       <li class="su-news-list-item__media">{{ news_list_image }}</li>
     {%- endif -%}
   {% endblock -%}
