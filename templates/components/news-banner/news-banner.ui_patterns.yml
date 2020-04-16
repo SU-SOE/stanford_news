@@ -22,4 +22,4 @@ news-banner:
     - banner:
         css:
           component:
-            ../../../dist/css/news-banner.css: { weight: 1000 }
+            ../../../dist/css/news-banner.css: { }

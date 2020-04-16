@@ -7,51 +7,51 @@
  *
  * Available variables:
  * - attributes: For additional HTML attributes not already provided.
- * - news_card_image: (needs description)
- * - news_card_publishing_date: (needs description)
- * - news_card_headline: (needs description)
- * - news_card_dek: (needs description)
- * - news_card_topics: (needs description)
- * - news_source: (needs description)
+ * - news_list_image: The list image.
+ * - news_list_publishing_date: This is the published date.
+ * - news_list_headline: This is the headline.
+ * - news_list_dek: This is the dek specific to news items.
+ * - news_list_topics: Associated terms from the topics taxonomy.
+ * - news_source: The source field.
  */
 #}
 <ul {{ attributes }} class="su-news-list {{ modifier_class }}">
   {# Card Image #}
-  {%- block block_news_card_image %}
-    {% if news_card_image|render|striptags('<drupal-render-placeholder>') is not empty -%}
-      <li class="su-news-list-item__media">{{ news_card_image }}</li>
+  {%- block block_news_list_image %}
+    {% if news_list_image|render|striptags('<drupal-render-placeholder>') is not empty -%}
+      <li class="su-news-list-item__media">{{ news_list_image }}</li>
     {%- endif -%}
   {% endblock -%}
 
   {# News Card Date #}
-  {%- block block_news_card_date %}
-    {% if news_card_publishing_date|render|striptags('<drupal-render-placeholder>') is not empty %}
-      <li class="su-news-list__item-date">{{ news_card_publishing_date }}</li>
+  {%- block block_news_list_date %}
+    {% if news_list_publishing_date|render|striptags('<drupal-render-placeholder>') is not empty %}
+      <li class="su-news-list__item-date">{{ news_list_publishing_date }}</li>
     {% endif -%}
   {% endblock -%}
 
   {# Card Headline #}
-  {%- block block_news_card_headline  %}
-    {%- if news_card_headline|render|striptags('<drupal-render-placeholder>') is not empty %}
+  {%- block block_news_list_headline  %}
+    {%- if news_list_headline|render|striptags('<drupal-render-placeholder>') is not empty %}
       <li class="su-news-list__item">
         <h2>
-          {{- news_card_headline -}}
+          {{- news_list_headline -}}
         </h2>
       </li>
     {% endif -%}
   {% endblock -%}
 
   {# An open field for body content #}
-  {% if news_card_dek|render|striptags('<drupal-render-placeholder>') is not empty %}
-    <li class="su-news-list-item__dek">{{ news_card_dek }}</li>
+  {% if news_list_dek|render|striptags('<drupal-render-placeholder>') is not empty %}
+    <li class="su-news-list-item__dek">{{ news_list_dek }}</li>
   {% endif %}
 
   {# Card Topics #}
-  {%- block block_news_card_topics  %}
-    {%- if news_card_topics|render|striptags('<drupal-render-placeholder>') is not empty %}
+  {%- block block_news_list_topics  %}
+    {%- if news_list_topics|render|striptags('<drupal-render-placeholder>') is not empty %}
       <li class="su-news-list__item">
         <span>
-          {{- news_card_topics -}}
+          {{- news_list_topics -}}
         </span>
       </li>
     {% endif -%}
