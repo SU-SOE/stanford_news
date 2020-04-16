@@ -4,11 +4,13 @@
 // Filter menu
 //
 
-// changing the layout for the filered pages
-@include grid-media-between('xs', 'lg') {
-  .left-region.flex-lg-3-of-12 {
-    flex: auto;
-    max-width: 100%;
+// Changing the layout for the filered pages.
+@include grid-media-max('lg') {
+  .left-region {
+    &.flex-lg-3-of-12 {
+      flex: auto;
+      max-width: 100%;
+    }
   }
 }
 
@@ -45,7 +47,7 @@
       float: right;
     }
 
-    @include grid-media-between('xs', 'lg') {
+    @include grid-media-max('lg') {
       &:before {
         @include small-paragraph;
         @include padding(null 15px null null);
@@ -53,7 +55,7 @@
         color: $su-color-bright-blue;
         content: "\f1de"; // Placeholder Icon until SU ones in place.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600; // Need this for the new version of FA. Will go away later.
+        font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
       }
     }
   }
@@ -64,8 +66,8 @@
 
     .menu-item {
       @include modular-spacing('padding-bottom', 2);
-      @include small-paragraph;
       @include modular-spacing('padding-left', 0);
+      @include small-paragraph;
 
       a {
         color: $su-color-black;
@@ -84,7 +86,7 @@
         color: $su-color-bright-blue;
         content: "\f00c"; ///* Need to switch to the SU icons.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600; // Need this for the new version of FA. Will go away later.
+        font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
         left: 35px;
         position: absolute;
       }
@@ -95,7 +97,7 @@
   }
 
   // Filter open/close for xs-lg
-  @include grid-media-between('xs', 'lg') {
+  @include grid-media-max('lg') {
     .menu {
       display: none;
     }
@@ -113,6 +115,5 @@
       display: none;
     }
   }
-
 
 }
