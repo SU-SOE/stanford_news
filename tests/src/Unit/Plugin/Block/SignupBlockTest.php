@@ -27,13 +27,25 @@ class SignupBlockTest extends UnitTestCase {
   }
 
   public function testBlockForm() {
-    $form = $this->blockObject->blockForm();
-    $input = 'https://stanford.us14.list-manage.com/subscribe/post?u=84e3c1df5a210f020250ee1d6&amp;id=74d8f03797';
+    $form = [];
+    $form_state = new FormState();
+    $form = $this->blockObject->blockForm($form, $form_state);
+  }
+
+  public function testBlockSubmit() {
+    $form = [];
+    $form_state = new FormState();
+    $this->blockObject->blockSubmit($form, $form_state);
+    $config = $this->blockObject->getConfiguration();
+    $config['form_action'] = 'my-form-action';
+    $this->assertEquals(['#configuration' => 'my-form-action'], $config['form_action']);
   }
 
   public function testBlockMethod() {
     $build = $this->blockObject->build();
-    $this->assertArrayEquals(['#theme' => 'signup_block'], $build);
+    $config = $this->blockObject->getConfiguration();
+    $config['form_action'] = 'my-form-action';
+    $this->assertArrayEquals(['#theme' => 'signup_block', '#configuration' => $config['form_action']], $build);
   }
 
 }
