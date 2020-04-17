@@ -23,29 +23,25 @@ class SignupBlockTest extends UnitTestCase {
    */
   protected function setUp() {
     parent::setUp();
-    $this->blockObject = new SignupBlock([], '', ['provider' => 'stanford_news']);
-  }
-
-  public function testBlockForm() {
-    $form = [];
-    $form_state = new FormState();
-    $form = $this->blockObject->blockForm($form, $form_state);
-  }
-
-  public function testBlockSubmit() {
-    $form = [];
-    $form_state = new FormState();
-    $this->blockObject->blockSubmit($form, $form_state);
-    $config = $this->blockObject->getConfiguration();
-    $config['form_action'] = 'my-form-action';
-    $this->assertEquals(['#configuration' => 'my-form-action'], $config['form_action']);
+    $this->blockObject = new SignupBlock([], '', [
+      "id" => "signup_block",
+      "label" => "Newsletter Signup",
+      "provider" => "stanford_news",
+      "label_display" => "visible",
+      "form_action" => "my-form-action"
+    ]);
   }
 
   public function testBlockMethod() {
     $build = $this->blockObject->build();
-    $config = $this->blockObject->getConfiguration();
-    $config['form_action'] = 'my-form-action';
-    $this->assertArrayEquals(['#theme' => 'signup_block', '#configuration' => $config['form_action']], $build);
+    $config = [
+      "id" => "signup_block",
+      "label" => "Newsletter Signup",
+      "provider" => "stanford_news",
+      "label_display" => "visible",
+      "form_action" => "my-form-action"
+    ];
+    $this->assertArrayEquals(['#theme' => 'signup_block', '#configuration' => $config], $build);
   }
 
 }
