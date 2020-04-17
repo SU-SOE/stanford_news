@@ -23,13 +23,13 @@ class SignupBlockTest extends UnitTestCase {
    */
   protected function setUp() {
     parent::setUp();
-    $this->blockObject = new SignupBlock([], '', [
+    $config = [
       "id" => "signup_block",
       "label" => "Newsletter Signup",
-      "provider" => "stanford_news",
       "label_display" => "visible",
       "form_action" => "my-form-action"
-    ]);
+    ];
+    $this->blockObject = new SignupBlock($config, '', ["provider" => "stanford_news"]);
   }
 
   public function testBlockMethod() {
