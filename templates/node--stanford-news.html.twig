@@ -5,17 +5,6 @@
   'centered-container'
 ] %}
 
-{# BEM inspired class syntax: https://en.bem.info/
-   Enable this code if you would like node classes like "article article--layout-teaser", where article is the content type and teaser is the view mode.
-{% set classes = classes|merge([
-  node.bundle|clean_class,
-  view_mode ? node.bundle|clean_class ~ '--layout-' ~ view_mode|clean_class
-]) %}
-{% set title_classes = [
-  node.bundle|clean_class ~ '__title'
-] %}
-#}
-
 <article{{ attributes.addClass(classes) }}>
 
   {% if title_prefix or title_suffix or display_submitted or unpublished or page is empty and label %}
@@ -37,55 +26,57 @@
       {% endif %}
 
       {% if not node.published %}
-        <p class="node--unpublished">{{ 'Unpublished'|t }}</p>
+        {%
+          set data = {
+          'attributes': create_attribute({'class': 'su-alert su-alert--warning'}),
+          'alert_text': "This page is currently unpublished and not visible to the public."|t,
+        }
+        %}
+        {% include "@jumpstart_ui/components/alert/alert.html.twig" with data %}
       {% endif %}
     </header>
   {% endif %}
 
   <div{{ content_attributes.addClass('content flex-container') }}>
-      {# {{ content|without('links') }} #}
     <div class="flex-10-of-12">
-    {% if content.su_news_topics is not empty %}
-      <div class="news-topics">
+      {% if content.su_news_topics is not empty %}
+        <div class="news-topics">
           {{ content.su_news_topics }}
-      </div>
+        </div>
       {% endif %}
       <div class="news-headline">
         {{ content.su_news_headline }}
       </div>
       {% if content.su_news_dek is not empty %}
-      <div class="news-dek">
+        <div class="news-dek">
           {{ content.su_news_dek }}
-      </div>
+        </div>
       {% endif %}
       <div class="byline-social-media-wrapper">
         {%- if content.su_news_publishing_date is not empty and content.su_news_byline is not empty -%}
           {%- set pipe = "|" -%}
-        <div class="news-date-pipe-byline">
-          {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
-        </div>
+          <div class="news-date-pipe-byline">
+            {{ content.su_news_publishing_date }} {{ pipe }} {{ content.su_news_byline }}
+          </div>
         {% endif %}
-        <div class="news-social-media">
-        </div>
+        <div class="news-social-media"></div>
       </div>
     </div>
-      {% if content.su_news_featured_media is not empty %}
+    {% if content.su_news_featured_media is not empty %}
       <div class="news-image flex-12-of-12">
         <div class="news-image">
           {{ content.su_news_featured_media }}
         </div>
-      {% endif %}
-        {% if content.su_news_featured_media is not empty %}
         <div class="news-image-caption">
           {{ content.su_news_featured_media_caption }}
         </div>
-        {% endif %}
       </div>
-      {% if content.su_news_components is not empty %}
-      <div class="news-page-components flex-8-of-12">
-          {{ content.su_news_components }}
+    {% endif %}
+    {% if content.su_news_components is not empty %}
+      <div class="news-page-components flex-6-of-12">
+        {{ content.su_news_components }}
       </div>
-      {% endif %}
+    {% endif %}
   </div><!-- /.content -->
 
   {% if content.links %}

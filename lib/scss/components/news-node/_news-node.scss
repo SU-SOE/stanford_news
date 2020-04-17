@@ -4,7 +4,6 @@
 
   div[class$="-12"] {
     @include margin(0 auto);
-
   }
 
   .news-topics {
@@ -13,6 +12,7 @@
 
     a {
       color: $su-color-bright-red;
+      text-decoration: none;
     }
 
     span {
@@ -43,10 +43,6 @@
   .byline-social-media-wrapper {
     display: flex;
     flex-wrap: wrap;
-
-    > div {
-
-    }
   }
 
   .news-date-pipe-byline {
@@ -71,6 +67,16 @@
       position: relative;
       top: -10px;
       width: auto;
+    }
+
+    .widget-wrapper-forward,
+    .widget-wrapper-print {
+      img {
+        @include padding(null 10px);
+
+        height: 25px;
+        top: -18px;
+      }
     }
   }
 
