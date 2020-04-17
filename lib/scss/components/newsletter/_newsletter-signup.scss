@@ -16,10 +16,6 @@
     background-color: $su-color-fog;
     text-align: center;
 
-    //.flex-8-of-12 {
-    //  @include margin(0 auto);
-    //}
-
     p {
       @include big-paragraph;
       @include modular-spacing('margin-top', 0);
@@ -58,5 +54,3 @@
 
   }
 }
-
-

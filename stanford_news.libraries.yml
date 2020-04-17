@@ -66,10 +66,4 @@ newsletter_signup:
   version: VERSION
   css:
     base:
-      dist/css/newsletter-signup.css: {}
-
-news_vertical_teaser:
-  version: VERSION
-  css:
-    base:
-      dist/css/news-vertical-teaser.css: {}
+      dist/css/newsletter.css: {}

@@ -4,11 +4,13 @@
 // Filter menu
 //
 
-// changing the layout for the filered pages
-@include grid-media-between('xs', 'lg') {
-  .left-region.flex-lg-3-of-12 {
-    flex: auto;
-    max-width: 100%;
+// Changing the layout for the filered pages.
+@include grid-media-max('lg') {
+  .left-region {
+    &.flex-lg-3-of-12 {
+      flex: auto;
+      max-width: 100%;
+    }
   }
 }
 
@@ -17,7 +19,7 @@
 
   border: 1px solid $su-color-cool-grey-25;
 
-  .collapsable-menu {
+  .news-topics__collapsable-menu {
     @include type-e;
 
     cursor: pointer;
@@ -35,17 +37,28 @@
       @include grid-media('xl') {
         margin-bottom: 0;
 
-        &+ .menu > li.menu-item:last-of-type {
-          padding-bottom: 0;
+        & + .menu {
+          & > li {
+            &.menu-item {
+              &:last-of-type {
+                padding-bottom: 0;
+              }
+            }
+          }
         }
       }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
 
     .su-link--jump {
       float: right;
     }
 
-    @include grid-media-between('xs', 'lg') {
+    @include grid-media-max('lg') {
       &:before {
         @include small-paragraph;
         @include padding(null 15px null null);
@@ -53,7 +66,7 @@
         color: $su-color-bright-blue;
         content: "\f1de"; // Placeholder Icon until SU ones in place.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600; // Need this for the new version of FA. Will go away later.
+        font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
       }
     }
   }
@@ -64,17 +77,26 @@
 
     .menu-item {
       @include modular-spacing('padding-bottom', 2);
-      @include small-paragraph;
       @include modular-spacing('padding-left', 0);
+      @include small-paragraph;
 
       a {
         color: $su-color-black;
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
       }
     }
 
-    & > li.menu-item:last-of-type {
-      padding-bottom: 0;
+    & > li {
+      &.menu-item {
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
     }
 
     .menu-item--active-trail {
@@ -84,7 +106,7 @@
         color: $su-color-bright-blue;
         content: "\f00c"; ///* Need to switch to the SU icons.
         font-family: 'Font Awesome 5 Free';
-        font-weight: 600; // Need this for the new version of FA. Will go away later.
+        font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
         left: 35px;
         position: absolute;
       }
@@ -95,24 +117,32 @@
   }
 
   // Filter open/close for xs-lg
-  @include grid-media-between('xs', 'lg') {
+  @include grid-media-max('lg') {
     .menu {
       display: none;
     }
-    .collapsable-menu.show + .menu {
-      display: block;
+    .news-topics__collapsable-menu {
+      &.show {
+        & + .menu {
+          display: block;
+        }
+      }
     }
   }
+
 
   // Filter open/close for xl
   @include grid-media('xl') {
     .menu {
       display: block;
     }
-    .collapsable-menu.show + .menu {
-      display: none;
+    .news-topics__collapsable-menu {
+      &.show {
+        + .menu {
+          display: none;
+        }
+      }
     }
   }
-
 
 }

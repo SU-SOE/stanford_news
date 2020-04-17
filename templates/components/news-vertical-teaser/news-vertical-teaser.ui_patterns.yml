@@ -1,10 +1,6 @@
 news-vertical-teaser:
   label: News Vertical Teaser
   description: "News Vertical Teaser"
-  variants:
-    default:
-      label: Default
-      description: "Default"
   fields:
     news_vertical_teaser_image:
       type: text
@@ -23,7 +19,7 @@ news-vertical-teaser:
       preview: "Link to taxonomy terms"
   use: "@news/news-vertical-teaser/news-vertical-teaser.twig"
   libraries:
-    - card:
+    - newsverteaser:
         css:
           component:
             ../../../dist/css/news-vertical-teaser.css: { weight: 1000 }

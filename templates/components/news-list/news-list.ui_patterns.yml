@@ -1,35 +1,31 @@
-news-card:
+news-list:
   label: News List Item
   description: "Building block component for the news list page."
-  variants:
-    default:
-      label: Default
-      description: "Default"
   fields:
-    news_card_image:
+    news_list_image:
       type: text
       label: "Image"
-      description: "The cards image."
+      description: "The list image."
       preview: "<img src='https://picsum.photos/900/900/' alt='Example Image' />"
-    news_card_publishing_date:
+    news_list_publishing_date:
       type: text
       label: "Date"
-      description: "Text heading"
-      preview: "This is a super headline"
-    news_card_headline:
+      description: "Publishing date"
+      preview: "This is the published date."
+    news_list_headline:
       type: text
       label: "Headline"
       description: "Text heading"
-      preview: "This is the headline"
-    news_card_dek:
+      preview: "This is the headline."
+    news_list_dek:
       type: text
       label: "Dek"
-      description: "This is the dek specific to news items"
-      preview: "<p>Sample text goes here and this card should be able to handle a few lines.</p>"
-    news_card_topics:
+      description: "This is the dek specific to news items."
+      preview: "<p>Sample text goes here and this list should be able to handle a few lines.</p>"
+    news_list_topics:
       type: text
       label: "Topics"
-      description: "Associated terms from the topics taxonomy"
+      description: "Associated terms from the topics taxonomy."
       preview: "Link to taxonomy terms"
     news_source:
       type: text
@@ -38,7 +34,7 @@ news-card:
       preview: "I am a link"
   use: "@news/news-list/news-item-list.twig"
   libraries:
-    - card:
+    - newslist:
         css:
           component:
-            ../../../dist/css/news-card.css: { weight: 1000 }
+            ../../../dist/css/news-item-list.css: { }
