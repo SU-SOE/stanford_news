@@ -62,14 +62,14 @@ news_list:
   dependencies:
     - core/jquery
 
-news_vertical_teaser:
-  version: VERSION
-  css:
-    base:
-      dist/css/news-vertical-teaser.css: {}
-
 newsletter_signup:
   version: VERSION
   css:
     base:
       dist/css/newsletter.css: {}
+
+news_vertical_teaser:
+  version: VERSION
+  css:
+    base:
+      dist/css/news-vertical-teaser.css: {}

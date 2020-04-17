@@ -7,11 +7,12 @@
  *
  * Available variables:
  * - attributes: For additional HTML attributes not already provided.
- * - news_vertical_teaser_image: Hero image for banner
- * - news_vertical_teaser_headline: Title of banner
+ * - news_vertical_teaser_image: Hero image for card
+ * - news_vertical_teaser_headline: Title of card
  * - news_topics: Topic selected. Dynamically altered vi news-banner.js
  */
 #}
+
 {%
   set classes = [
   'su-card',
@@ -33,4 +34,3 @@
     <div class="news-vertical-teaser__topics">{{ news_topics }}</div>
   </section>
 </article>
-
