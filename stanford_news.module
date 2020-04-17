@@ -63,3 +63,7 @@ function stanford_news_preprocess_node(&$variables) {
     $variables['#attached']['library'][] = 'stanford_news/news_node';
   }
 }
+
+function stanford_news_entity_load($entities, $entity_type_id) {
+  // var_dump($entity_type_id);
+}

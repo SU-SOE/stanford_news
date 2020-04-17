@@ -41,7 +41,3 @@ component-libraries:
   news:
     paths:
       - templates/components
-#
-# default_content:
-#   page_variant:
-#     - 0efb7e45-6afb-44d9-aac9-8e7b12ab3955
