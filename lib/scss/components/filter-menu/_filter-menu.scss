@@ -21,9 +21,14 @@
 
   .news-topics__collapsable-menu {
     @include type-e;
+    @include padding(0);
 
+    background-color: transparent;
+    color: $su-color-bright-blue;
     cursor: pointer;
     display: inline-block;
+    font-weight: $su-font-semi-bold;
+    text-align: left;
     text-decoration: none;
     width: 100%;
 
