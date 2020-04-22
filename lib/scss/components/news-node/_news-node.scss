@@ -57,15 +57,21 @@
   @include modular-spacing('margin-bottom', 1);
 }
 
-// Node field - Image.
-.su-news-image-caption {
-  .su-news-featured-media-caption {
-    @include caption;
-    @include modular-spacing('padding', null 0);
-    @include modular-spacing('margin', 1 null 1);
-
-    text-align: center;
+// Node field - Featured Image.
+.su-news-featured-media {
+  picture,
+  img {
+    min-width: 100%;
+    width: 100%;
   }
+}
+
+// Node field - Featured Image Caption.
+.su-news-featured-media-caption {
+  @include caption;
+  @include modular-spacing('padding', null 0);
+  @include modular-spacing('margin', 1 null 2);
+  text-align: center;
 }
 
 // Social Media Plugin.

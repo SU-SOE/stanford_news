@@ -28,6 +28,7 @@ dependencies:
   - pathauto:pathauto
   - stanford_media:stanford_media
   - stanford_text_editor:stanford_text_editor
+  - taxonomy_menu:taxonomy_menu
   - ui_patterns:ui_patterns
   - ui_patterns:ui_patterns_layouts
   - ui_patterns:ui_patterns_library
