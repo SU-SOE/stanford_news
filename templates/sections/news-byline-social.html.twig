@@ -1,0 +1,21 @@
+{#
+/**
+ * News Node - Byline Social Media.
+ */
+#}
+{%- set attributes = attributes.addClass('byline-social-media-wrapper') -%}
+
+<div{{ attributes }}>
+  {% if content.su_news_publishing_date or content.su_news_byline %}
+    <div {{ region_attributes.su_news_byline.addClass('news-date-pipe-byline')}}>
+      {%- if content.su_news_publishing_date is not empty %}
+        <span class="su_news_publishing_date-region">{{ content.su_news_publishing_date }}</span>
+      {% endif %}
+      {% if content.su_news_publishing_date and content.su_news_byline %} | {% endif %}
+      {%- if content.su_news_byline is not empty %}
+        <span class="su_news_byline-region">{{ content.su_news_byline }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="news-social-media"></div>
+</div>

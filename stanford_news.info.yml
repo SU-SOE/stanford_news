@@ -5,33 +5,33 @@ core_version_requirement: ^8.8 || ^9
 package: Stanford
 version: 8.x-1.0-dev
 dependencies:
-  - auto_entitylabel:auto_entitylabel
   - allowed_formats:allowed_formats
-  - drupal:breakpoint
+  - auto_entitylabel:auto_entitylabel
   - components:components
+  - drupal:breakpoint
   - drupal:datetime
   - ds:ds
   - ds:ds_extras
-  - entity_reference_revisions:entity_reference_revisions
   - drual:field
   - drupal:file
   - drupal:image
-  - jumpstart_ui:jumpstart_ui
   - drupal:link
   - drupal:menu_ui
   - drupal:node
-  - paragraphs:paragraphs
   - drupal:path
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:user
+  - entity_reference_revisions:entity_reference_revisions
+  - jumpstart_ui:jumpstart_ui
+  - paragraphs:paragraphs
   - pathauto:pathauto
   - stanford_media:stanford_media
   - stanford_text_editor:stanford_text_editor
-  - drupal:taxonomy
-  - drupal:text
   - ui_patterns:ui_patterns
   - ui_patterns:ui_patterns_layouts
   - ui_patterns:ui_patterns_library
   - ui_patterns:ui_patterns_views
-  - drupal:user
   - views_block_filter_block:views_block_filter_block
   - views_infinite_scroll:views_infinite_scroll
   - viewfield:viewfield
