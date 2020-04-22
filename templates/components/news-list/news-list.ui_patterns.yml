@@ -37,4 +37,4 @@ news-list:
     - newslist:
         css:
           component:
-            ../../../dist/css/news-item-list.css: { }
+            ../../../dist/css/news-list-item.css: { }
