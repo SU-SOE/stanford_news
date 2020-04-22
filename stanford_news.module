@@ -42,13 +42,6 @@ function stanford_news_preprocess_block(&$variables) {
       $variables['#attached']['library'][] = 'stanford_news/newsletter_signup';
     }
   }
-
-  // Attach library to news_list block.
-  if (!empty($variables['elements']['content']['#cache']['contexts'])) {
-    if (in_array('route.menu_active_trails:news-topics', $variables['elements']['content']['#cache']['contexts'])) {
-      $variables['#attached']['library'][] = 'stanford_news/news_list';
-    }
-  }
 }
 
 /**

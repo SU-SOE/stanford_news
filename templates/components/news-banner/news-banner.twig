@@ -12,7 +12,8 @@
  * - news_banner_topic: Topic selected. Dynamically altered vi news-banner.js
  */
 #}
-<div {{ attributes }} class="su-news-banner {{ modifier_class }}">
+{% set attributes = attributes.addClass(['su-news-banner', modifier_class]) %}
+<div {{ attributes }}>
   {{ news_banner_image }}
   {{ news_banner_title }}
   {{ news_banner_topic }}

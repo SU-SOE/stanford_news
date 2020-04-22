@@ -15,7 +15,8 @@
  * - news_source: The source field.
  */
 #}
-<ul {{ attributes }} class="su-news-list {{ modifier_class }}">
+{% set attributes = attributes.addClass(['su-news-list', modifier_class]) %}
+<ul {{ attributes }}>
   {# News List Image #}
   {%- block block_news_list_image %}
     {% if news_list_image|render|striptags('<drupal-render-placeholder><img><picture>') is not empty -%}
