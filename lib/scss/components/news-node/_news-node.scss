@@ -50,6 +50,14 @@
     @include modular-spacing('margin-bottom', 7);
     @include modular-spacing('margin-right', 3);
 
+    @include grid-media('lg'){
+      @include modular-spacing('margin-right', 2);
+    }
+
+    @include grid-media-between('xs','md'){
+      @include modular-spacing('margin-bottom', 2);
+    }
+
     display: inline-block;
 
     > div {
@@ -58,13 +66,22 @@
   }
 
   .news-social-media {
+    @include grid-media-between('xs','md'){
+      @include modular-spacing('margin-bottom', 2);
+
+      div {
+        &:first-of-type {
+          padding-left: 0;
+        }
+      }
+    }
+
     div {
       @include padding(null 10px);
 
       display: inline-block;
-      //height: 40px;
       position: relative;
-      top: -10px;
+      top: -5px;
       width: auto;
     }
 
@@ -108,6 +125,7 @@
         @include fa-icon;
         color: $su-color-black;
         font-family: 'Font Awesome 5 Brands';
+        font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
         transition: color 0.25s ease-out;
       }
     }
@@ -174,10 +192,11 @@
     }
   }
 
-  .soe-news-header__social-email {
+  .soe-news-header__social-forward {
     i {
       &::before {
-        content: fa-content($fa-var-twitter);
+        content: "\f0e0";
+        font-family: unset;
       }
     }
 
@@ -185,7 +204,25 @@
     &:focus {
       i {
         &::before {
-          color: color('Twitter', $su-social-brands);
+          color: $su-color-bright-blue;
+        }
+      }
+    }
+  }
+
+  .soe-news-header__social-print {
+    i {
+      &::before {
+        content: "\f02f";
+        font-family: unset;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      i {
+        &::before {
+          color: $su-color-bright-blue;
         }
       }
     }
