@@ -10,7 +10,7 @@
 .news-date-pipe-byline {
   @include small-paragraph;
   @include modular-spacing('margin-bottom', 7);
-  @include modular-spacing('margin-right', 3);
+  @include modular-spacing('margin-right', 2);
   display: inline-block;
 
   div {

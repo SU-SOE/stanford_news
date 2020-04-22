@@ -172,11 +172,9 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: media_responsive_image_formatter
+                type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
-                  image_style: card_2_1
-                  link: false
                 third_party_settings:
                   field_formatter_class:
                     class: su-news-featured-media
@@ -338,7 +336,7 @@ content:
     weight: 5
     label: hidden
     settings:
-      view_mode: full
+      view_mode: default
       link: false
     third_party_settings: {  }
     region: content
