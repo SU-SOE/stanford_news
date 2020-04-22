@@ -36,8 +36,6 @@ function stanford_news_theme() {
  */
 function stanford_news_preprocess_block(&$variables) {
 
-  // dpm($variables);
-
   // Attach Library to the signup block wherever it goes.
   if (!empty($variables['elements']['#id'])) {
     if ($variables['elements']['#id'] == 'newslettersignup') {
