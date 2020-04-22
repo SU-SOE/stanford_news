@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 .byline-social-media-wrapper {
-  @include margin(null auto);
-  display: flex;
-  flex-wrap: wrap;
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .news-date-pipe-byline {
@@ -57,7 +58,7 @@
 }
 
 // Node field - Image.
-.news-image-caption {
+.su-news-image-caption {
   .su-news-featured-media-caption {
     @include caption;
     @include modular-spacing('padding', null 0);
