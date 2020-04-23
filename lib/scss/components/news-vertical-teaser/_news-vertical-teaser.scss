@@ -9,6 +9,12 @@
     @include margin(0 auto);
     max-width: 980px;
 
+    .su-card__media {
+      img {
+        width: 100%;
+      }
+    }
+
     .su-card__contents {
 
       .su-link--action {
@@ -25,6 +31,7 @@
           background-color: $su-color-bright-red;
         }
       }
+
       .news-vertical-teaser__topics {
         @include small-paragraph;
 
