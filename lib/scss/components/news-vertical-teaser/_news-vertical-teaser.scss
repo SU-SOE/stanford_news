@@ -10,9 +10,16 @@
 
     .su-media__wrapper {
       img,
-      picture {
+      picture,
+      iframe {
         min-width: 100%;
         width: 100%;
+      }
+
+      iframe {
+        @include grid-media('lg') {
+          min-height: 489px;
+        }
       }
     }
 
