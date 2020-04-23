@@ -60,9 +60,20 @@
 // Node field - Featured Image.
 .su-news-featured-media {
   picture,
-  img {
+  img,
+  iframe {
     min-width: 100%;
     width: 100%;
+  }
+
+  iframe {
+    @include grid-media('md') {
+      min-height: 450px;
+    }
+
+    @include grid-media('lg') {
+      min-height: 550px;
+    }
   }
 }
 
