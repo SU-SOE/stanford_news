@@ -51,6 +51,7 @@ news_node:
     dist/js/news-node.behaviors.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
 
 news_list:
   version: VERSION

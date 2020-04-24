@@ -15,14 +15,14 @@
 
 {%
   set classes = [
-  'su-card',
-  'su-news-vertical-teaser',
-  modifier_class
-]
+    'su-card',
+    'su-news-vertical-teaser',
+    modifier_class
+  ]
 %}
 {% set attributes = attributes.addClass(classes) %}
 
-<article {{ attributes }}>
+<article{{ attributes }}>
   <figure class="su-media su-media--image su-card__media">
       <div class="su-media__wrapper">
         {{ news_vertical_teaser_image }}

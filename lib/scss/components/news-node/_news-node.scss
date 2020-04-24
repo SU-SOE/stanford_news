@@ -11,6 +11,15 @@
   @include small-paragraph;
   @include modular-spacing('margin-bottom', 7);
   @include modular-spacing('margin-right', 2);
+
+  @include grid-media('lg') {
+    @include modular-spacing('margin-right', 2);
+  }
+
+  @include grid-media-between ('xs','md'){
+    @include modular-spacing('margin-bottom', 2);
+  }
+
   display: inline-block;
 
   div {
@@ -88,25 +97,142 @@
 // Social Media Plugin.
 .news-social-media {
   @include small-paragraph;
+  @include grid-media-max('md') {
+    @include modular-spacing('margin-bottom', 2);
 
-  div {
-    display: inline-block;
+    div {
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
   }
 
-  img {
-    height: 40px;
+  a {
+    color: $su-color-cool-grey-25;
+    text-decoration: none;
+    span {
+      @include sr-only;
+    }
+  }
+
+  i {
+    font-size: 2.5rem;
+
+    // FA is included as a vendor dependency but the class styles are not
+    // included so we have to use the mixins and font declarations here.
+    &::before {
+      @include fa-icon;
+      color: $su-color-black;
+      font-family: 'Font Awesome 5 Brands';
+      font-weight: $su-font-semi-bold; // Need this for the new version of FA. Will go away later.
+      transition: color 0.25s ease-out;
+    }
+  }
+
+  div {
+    @include padding(null 10px);
+
+    display: inline-block;
     position: relative;
-    top: -10px;
+    top: -5px;
     width: auto;
   }
 
   .widget-wrapper-forward,
   .widget-wrapper-print {
     img {
-      @include padding(null 10px);
-
       height: 25px;
-      top: -18px;
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+
+// Font Awesome icons for specific selectors.
+// ------------------------------------------------
+.soe-news-header__social-facebook {
+  i {
+    &::before {
+      content: fa-content($fa-var-facebook-f);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    i {
+      &::before {
+        color: color('Facebook', $su-social-brands);
+      }
+    }
+  }
+}
+
+.soe-news-header__social-linkedin {
+  i {
+    &::before {
+      content: fa-content($fa-var-linkedin-in);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    i {
+      &::before {
+        color: color('LinkedIn', $su-social-brands);
+      }
+    }
+  }
+}
+
+.soe-news-header__social-twitter {
+  i {
+    &::before {
+      content: fa-content($fa-var-twitter);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    i {
+      &::before {
+        color: color('Twitter', $su-social-brands);
+      }
+    }
+  }
+}
+
+.soe-news-header__social-forward {
+  i {
+    &::before {
+      content: "\f0e0";
+      font-family: unset;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    i {
+      &::before {
+        color: $su-color-bright-blue;
+      }
+    }
+  }
+}
+
+.soe-news-header__social-print {
+  i {
+    &::before {
+      content: "\f02f";
+      font-family: unset;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    i {
+      &::before {
+        color: $su-color-bright-blue;
+      }
     }
   }
 }
