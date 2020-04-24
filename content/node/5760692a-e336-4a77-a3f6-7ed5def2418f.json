@@ -146,7 +146,7 @@
                         "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
                     },
                     "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_topics"
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
                     }
                 },
                 "uuid": [
@@ -161,7 +161,7 @@
                         "href": "http:\/\/default\/taxonomy\/term\/8?_format=hal_json"
                     },
                     "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_topics"
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
                     }
                 },
                 "uuid": [

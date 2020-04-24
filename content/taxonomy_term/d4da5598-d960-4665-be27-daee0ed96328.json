@@ -4,9 +4,9 @@
             "href": "http:\/\/default\/taxonomy\/term\/8?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_topics"
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
         },
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/stanford_topics\/parent": [
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/stanford_news_topics\/parent": [
             null
         ]
     },
@@ -33,7 +33,7 @@
     ],
     "vid": [
         {
-            "target_id": "stanford_topics"
+            "target_id": "stanford_news_topics"
         }
     ],
     "revision_created": [
@@ -68,7 +68,7 @@
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/stanford_topics\/parent": [
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/stanford_news_topics\/parent": [
             null
         ]
     },
