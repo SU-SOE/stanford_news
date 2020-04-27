@@ -13,14 +13,31 @@
  * - news_list_dek: This is the dek specific to news items.
  * - news_list_topics: Associated terms from the topics taxonomy.
  * - news_source: The source field.
+ * - news_url: A url to wrap the image and heading with
  */
 #}
-{% set attributes = attributes.addClass(['su-news-list', modifier_class]) %}
+{%- set attributes = attributes.addClass(['su-news-list', modifier_class]) -%}
+
+{# If the news source url is set go there instead of the default. #}
+{%- if news_source is not empty -%}
+  {%- set news_url = news_source -%}
+{%- endif %}
+
+{% set news_url = url(news_url|render|striptags("<drupal-render-placeholder>")) %}
+
 <ul {{ attributes }}>
   {# News List Image #}
   {%- block block_news_list_image %}
     {% if news_list_image|render|striptags('<drupal-render-placeholder><img><picture>') is not empty -%}
-      <li class="su-news-list-item__media">{{ news_list_image }}</li>
+      <li class="su-news-list-item__media">
+        {%- if news_url is not empty -%}
+          <a {{ news_url_attributes }} href="{{ news_url }}">
+            {{- news_list_image -}}
+          </a>
+        {%- else -%}
+          {{- news_list_image -}}
+        {%- endif -%}
+      </li>
     {%- endif -%}
   {% endblock -%}
 
@@ -36,7 +53,13 @@
     {%- if news_list_headline|render|striptags('<drupal-render-placeholder>') is not empty %}
       <li class="su-news-list__item">
         <h2>
-          {{- news_list_headline -}}
+          {%- if news_url is not empty -%}
+            <a {{ news_url_attributes }} href="{{ news_url }}">
+              {{- news_list_headline -}}
+            </a>
+          {%- else -%}
+            {{- news_list_headline -}}
+          {%- endif -%}
         </h2>
       </li>
     {% endif -%}

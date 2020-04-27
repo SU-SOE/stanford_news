@@ -32,6 +32,11 @@ news-list:
       label: "Source"
       description: "The source field."
       preview: "I am a link"
+    news_url:
+      type: text
+      label: "URL for item"
+      description: "URL for image and heading"
+      preview: "http://www.stanford.edu/"
   use: "@news/news-list/news-item-list.twig"
   libraries:
     - newslist:

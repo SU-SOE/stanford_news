@@ -10,6 +10,8 @@
  * - news_vertical_teaser_image: Hero image for card
  * - news_vertical_teaser_headline: Title of card
  * - news_topics: Topic selected. Dynamically altered vi news-banner.js
+ * - news_source: The source field.
+ * - news_url: A url to wrap the image and heading with
  */
 #}
 
@@ -21,15 +23,34 @@
   ]
 %}
 
+{# If the news source url is set go there instead of the default. #}
+{%- if news_source is not empty -%}
+  {%- set news_url = news_source -%}
+{%- endif %}
+
+{% set news_url = news_url|render|striptags("<drupal-render-placeholder>") %}
+
 <article{{ attributes.addClass(classes) }}>
   <figure class="su-media su-media--image su-card__media">
       <div class="su-media__wrapper">
-        {{ news_vertical_teaser_image }}
+        {%- if news_url is not empty -%}
+          <a {{ news_url_attributes }} href="{{ news_url }}">
+            {{- news_vertical_teaser_image -}}
+          </a>
+        {%- else -%}
+          {{- news_vertical_teaser_image -}}
+        {%- endif -%}
       </div>
   </figure>
   <section class="su-card__contents">
     <h2 class="su-link su-card__link su-link--action">
-      {{ news_vertical_teaser_headline }}
+      {%- if news_url is not empty -%}
+        <a {{ news_url_attributes }} href="{{ news_url }}">
+          {{- news_vertical_teaser_headline -}}
+        </a>
+      {%- else -%}
+        {{- news_vertical_teaser_headline -}}
+      {%- endif -%}
     </h2>
     <div class="news-vertical-teaser__topics">{{ news_topics }}</div>
   </section>
