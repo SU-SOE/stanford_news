@@ -23,7 +23,7 @@
   {%- set news_url = news_source -%}
 {%- endif %}
 
-{% set news_url = url(news_url|render|striptags("<drupal-render-placeholder>")) %}
+{% set news_url = news_url|render|striptags("<drupal-render-placeholder>") %}
 
 <ul {{ attributes }}>
   {# News List Image #}
