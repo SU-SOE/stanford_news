@@ -198,7 +198,7 @@
     ],
     "title": [
         {
-            "value": "Sample News: Smith Conference",
+            "value": "Sample: Smith Conference",
             "lang": "en"
         }
     ],
@@ -243,7 +243,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Sample News: Smith Conference | University",
+                "title": "Sample: Smith Conference | University",
                 "og_site_name": "University",
                 "canonical_url": "http:\/\/default\/news\/sample-news-smith-conference",
                 "og_url": "http:\/\/default\/home"
@@ -275,7 +275,7 @@
     ],
     "su_news_headline": [
         {
-            "value": "Sample News: Smith Conference"
+            "value": "Sample: Smith Conference"
         }
     ],
     "su_news_publishing_date": [
