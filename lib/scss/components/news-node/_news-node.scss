@@ -51,6 +51,38 @@
   }
 }
 
+// Node Field - More topics after article.
+.su-news-more-topics {
+  border-top: 1px solid $su-color-cool-grey-15;
+
+  h2 {
+    @include modular-spacing('padding-top', 0);
+    @include big-paragraph;
+
+    color: $su-color-black;
+    font-weight: $su-font-semi-bold;
+    margin-bottom: 0;
+  }
+
+  .su-news-topics {
+    @include margin(0);
+    @include big-paragraph;
+
+    a {
+      font-weight: $su-font-regular;
+    }
+  }
+}
+
+// Node View - More news 3 across cards.
+.stanford-news-vertical-teaser-term {
+  > h2 {
+    @include modular-spacing('margin-bottom', 2);
+
+    text-align: center;
+  }
+}
+
 // Node Field - Headline.
 .su-news-headline {
   @include modular-spacing('margin-bottom', 3);
