@@ -37,7 +37,8 @@ class NewsNodeCest {
       //'url_alias' => '/news/news-story'
     ]);
     $I->amOnPage("/node/{$node->id()}/edit");
-    $I->fillField('Topics', 'Term 1');
+    $I->see('Topics');
+    $I->fillField('//input@name=su_news_topics[0][target_id]', 'Term 1');
     $I->canSee('This is a headline', '.su-news-headline');
 
   }
