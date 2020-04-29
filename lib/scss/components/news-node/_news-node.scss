@@ -55,6 +55,7 @@
 .su-news-headline {
   @include modular-spacing('margin-bottom', 3);
   @include modular-spacing('margin-top', 2);
+
   h1 {
     @include modular-typography(5);
   }
@@ -110,6 +111,7 @@
   a {
     color: $su-color-cool-grey-25;
     text-decoration: none;
+
     span {
       @include sr-only;
     }

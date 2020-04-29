@@ -24,7 +24,7 @@ function stanford_news_theme() {
       'variables' => [
         'configuration' => [],
       ],
-      'template' => 'block/signup-block'
+      'template' => 'block/signup-block',
     ],
     'block__menu_block__news_topics' => [
       'template' => 'block/block--menu-block--news-topics',
@@ -53,8 +53,8 @@ function stanford_news_preprocess_block(&$variables) {
 }
 
 /**
-* Implements hook_views_pre_render().
-*/
+ * Implements hook_views_pre_render().
+ */
 function stanford_news_views_pre_render(ViewExecutable $view) {
   if (isset($view) && ($view->storage->id() == 'stanford_news')) {
     $view->element['#attached']['library'][] = 'stanford_news/news_list';
