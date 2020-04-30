@@ -4,7 +4,7 @@ dependencies:
   config:
     - page_manager.page.topics_term_overrides
 id: topics_term_overrides-layout_builder-0
-label: 'Layout Builder'
+label: 'News - Layout Builder'
 variant: layout_builder
 variant_settings:
   id: layout_builder
