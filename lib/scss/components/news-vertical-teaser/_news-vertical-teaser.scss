@@ -98,12 +98,12 @@
       }
 
       // Action title link.
-      .su-link--action {
+      .su-link {
         @include type-c;
         @include modular-spacing('margin-bottom', 1);
         display: inline-block;
 
-        &:after {
+        &::after {
           @include type-c;
           @include modular-spacing('margin-left', -1);
           background-color: $su-color-bright-red;
@@ -111,6 +111,13 @@
 
         a {
           color: $su-color-black;
+        }
+      }
+
+      .su-link--external {
+        &::after {
+          height: 1.2rem;
+          width: 1.2rem;
         }
       }
 
