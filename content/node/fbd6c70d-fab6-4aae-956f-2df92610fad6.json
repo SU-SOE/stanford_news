@@ -301,7 +301,7 @@
             "value": "This is a news item. Here you can post an excerpt from the Stanford Report and link to the original article or add a story of your own."
         }
     ],
-    "su_news_featured_media_caption": [
+    "su_news_banner_media_caption": [
         {
             "value": "This is your banner media caption"
         }
