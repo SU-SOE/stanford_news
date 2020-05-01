@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/news\/runners-15-feet-new-6-feet-social-distancing?_format=hal_json"
+            "href": "http:\/\/default\/news\/sample-runners-15-feet-new-6-feet-social-distancing?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/stanford_news"
@@ -29,10 +29,10 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/stanford_news\/su_news_topics": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
+                "href": "http:\/\/default\/news\/announcements?_format=hal_json"
             },
             {
-                "href": "http:\/\/default\/taxonomy\/term\/8?_format=hal_json"
+                "href": "http:\/\/default\/news\/news?_format=hal_json"
             }
         ]
     },
@@ -48,7 +48,7 @@
     ],
     "vid": [
         {
-            "value": 13
+            "value": 1
         }
     ],
     "langcode": [
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8814f8c7-48d2-42a3-8e42-d5913f91b35f"
+                        "value": "4dce5529-2694-41c4-a7b2-f838f62e43a9"
                     }
                 ]
             }
@@ -98,7 +98,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8814f8c7-48d2-42a3-8e42-d5913f91b35f"
+                        "value": "4dce5529-2694-41c4-a7b2-f838f62e43a9"
                     }
                 ],
                 "lang": "en"
@@ -119,7 +119,7 @@
                         "value": "6757d78d-2016-482c-b708-36ec4933c3f2"
                     }
                 ],
-                "target_revision_id": "20"
+                "target_revision_id": "2"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/stanford_news\/su_news_featured_media": [
@@ -143,7 +143,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
+                        "href": "http:\/\/default\/news\/announcements?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
@@ -158,7 +158,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/8?_format=hal_json"
+                        "href": "http:\/\/default\/news\/news?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
@@ -227,17 +227,33 @@
             "value": {
                 "title": "Sample: For Runners, Is 15 Feet the New 6 Feet for Social Distancing? | University",
                 "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/runners-15-feet-new-6-feet-social-distancing",
-                "og_url": "http:\/\/default\/home"
+                "canonical_url": "http:\/\/default\/news\/sample-runners-15-feet-new-6-feet-social-distancing",
+                "og_url": "http:\/\/default\/home",
+                "keywords": "Announcements, In the News"
             }
         }
     ],
     "path": [
         {
-            "alias": "\/news\/runners-15-feet-new-6-feet-social-distancing",
-            "pid": 10,
+            "alias": "\/news\/sample-runners-15-feet-new-6-feet-social-distancing",
+            "pid": 5,
             "langcode": "en",
             "lang": "en"
+        }
+    ],
+    "rh_action": [
+        {
+            "value": "page_redirect"
+        }
+    ],
+    "rh_redirect": [
+        {
+            "value": "https:\/\/www.nytimes.com\/2020\/04\/15\/well\/move\/running-social-distancing.html"
+        }
+    ],
+    "rh_redirect_response": [
+        {
+            "value": 301
         }
     ],
     "su_news_byline": [

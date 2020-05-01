@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/8?_format=hal_json"
+            "href": "http:\/\/default\/news\/news?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
@@ -22,7 +22,7 @@
     ],
     "revision_id": [
         {
-            "value": 1
+            "value": 4
         }
     ],
     "langcode": [
@@ -96,16 +96,18 @@
             "value": {
                 "title": "In the News | University",
                 "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/taxonomy\/term\/8",
+                "canonical_url": "http:\/\/default\/news\/news",
                 "description": "In the News",
-                "og_url": "http:\/\/default\/home"
+                "news_keywords": "In the News",
+                "og_url": "http:\/\/default\/home",
+                "keywords": "In the News"
             }
         }
     ],
     "path": [
         {
-            "alias": null,
-            "pid": null,
+            "alias": "\/news\/news",
+            "pid": 4,
             "langcode": "en",
             "lang": "en"
         }
