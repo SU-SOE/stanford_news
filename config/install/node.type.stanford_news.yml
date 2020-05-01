@@ -1,3 +1,4 @@
+uuid: 3cd64396-2874-4d97-996d-f6e82ef235fb
 langcode: en
 status: true
 dependencies:
@@ -5,10 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
-name: 'News'
+    available_menus: {  }
+    parent: ''
+name: 'Stanford News'
 type: stanford_news
 description: ''
 help: ''
