@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
+            "href": "http:\/\/default\/news\/announcements?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/stanford_news_topics"
@@ -22,7 +22,7 @@
     ],
     "revision_id": [
         {
-            "value": 5
+            "value": 3
         }
     ],
     "langcode": [
@@ -96,16 +96,18 @@
             "value": {
                 "title": "Announcements | University",
                 "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/taxonomy\/term\/5",
+                "canonical_url": "http:\/\/default\/news\/announcements",
                 "description": "Announcements",
-                "og_url": "http:\/\/default\/home"
+                "news_keywords": "Announcements",
+                "og_url": "http:\/\/default\/home",
+                "keywords": "Announcements"
             }
         }
     ],
     "path": [
         {
-            "alias": null,
-            "pid": null,
+            "alias": "\/news\/announcements",
+            "pid": 3,
             "langcode": "en",
             "lang": "en"
         }

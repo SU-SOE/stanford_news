@@ -61,13 +61,6 @@ var webpackConfig = {
     filename: "[name].js",
     path: distJS
   },
-  // Relative output paths for css assets.
-  resolve: {
-    alias: {
-      '@decanter-assets':  path.resolve(npmPackage, 'decanter/core/src/img'),
-      '@fa-fonts':         path.resolve(npmPackage, '@fortawesome/fontawesome-free/webfonts')
-    }
-  },
   // Additional module rules.
   module: {
     rules: [

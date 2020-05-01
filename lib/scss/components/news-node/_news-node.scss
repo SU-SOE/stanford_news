@@ -51,6 +51,38 @@
   }
 }
 
+// Node Field - More topics after article.
+.section-more-topics {
+  border-top: 1px solid $su-color-cool-grey-15;
+
+  h2 {
+    @include modular-spacing('padding-top', 0);
+    @include big-paragraph;
+
+    color: $su-color-black;
+    font-weight: $su-font-semi-bold;
+    margin-bottom: 0;
+  }
+
+  .su-news-topics {
+    @include margin(0);
+    @include big-paragraph;
+
+    a {
+      font-weight: $su-font-regular;
+    }
+  }
+}
+
+// Node View - More news 3 across cards.
+.stanford-news-vertical-teaser-term {
+  > h2 {
+    @include modular-spacing('margin-bottom', 2);
+
+    text-align: center;
+  }
+}
+
 // Node Field - Headline.
 .su-news-headline {
   @include modular-spacing('margin-bottom', 3);
@@ -67,8 +99,8 @@
   @include modular-spacing('margin-bottom', 1);
 }
 
-// Node field - Featured Image.
-.su-news-featured-media {
+// Node field - Banner Image.
+.su-news-banner {
   picture,
   img,
   iframe {
@@ -88,7 +120,7 @@
 }
 
 // Node field - Featured Image Caption.
-.su-news-featured-media-caption {
+.su-news-banner-media-caption {
   @include caption;
   @include modular-spacing('padding', null 0);
   @include modular-spacing('margin', 1 null 2);
@@ -152,7 +184,7 @@
 
 // Font Awesome icons for specific selectors.
 // ------------------------------------------------
-.soe-news-header__social-facebook {
+.su-news-header__social-facebook {
   i {
     &::before {
       content: fa-content($fa-var-facebook-f);
@@ -169,7 +201,7 @@
   }
 }
 
-.soe-news-header__social-linkedin {
+.su-news-header__social-linkedin {
   i {
     &::before {
       content: fa-content($fa-var-linkedin-in);
@@ -186,7 +218,7 @@
   }
 }
 
-.soe-news-header__social-twitter {
+.su-news-header__social-twitter {
   i {
     &::before {
       content: fa-content($fa-var-twitter);
@@ -203,7 +235,7 @@
   }
 }
 
-.soe-news-header__social-forward {
+.su-news-header__social-forward {
   i {
     &::before {
       content: "\f0e0";
@@ -221,7 +253,7 @@
   }
 }
 
-.soe-news-header__social-print {
+.su-news-header__social-print {
   i {
     &::before {
       content: "\f02f";
