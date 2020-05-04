@@ -8,11 +8,9 @@ dependencies:
   - allowed_formats:allowed_formats
   - auto_entitylabel:auto_entitylabel
   - components:components
+  - drual:field
   - drupal:breakpoint
   - drupal:datetime
-  - ds:ds
-  - ds:ds_extras
-  - drual:field
   - drupal:file
   - drupal:image
   - drupal:link
@@ -22,8 +20,11 @@ dependencies:
   - drupal:taxonomy
   - drupal:text
   - drupal:user
+  - ds:ds
+  - ds:ds_extras
   - entity_reference_revisions:entity_reference_revisions
   - jumpstart_ui:jumpstart_ui
+  - page_manager:page_manager
   - paragraphs:paragraphs
   - pathauto:pathauto
   - stanford_media:stanford_media
@@ -33,11 +34,10 @@ dependencies:
   - ui_patterns:ui_patterns_layouts
   - ui_patterns:ui_patterns_library
   - ui_patterns:ui_patterns_views
+  - viewfield:viewfield
   - views_block_filter_block:views_block_filter_block
   - views_infinite_scroll:views_infinite_scroll
-  - viewfield:viewfield
   - views_taxonomy_term_name_depth:views_taxonomy_term_name_depth
-
 component-libraries:
   news:
     paths:
