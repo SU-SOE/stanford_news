@@ -13,6 +13,7 @@
     }
   ],
   "require": {
+    "drupal/ctools": "^3.4",
     "drupal/auto_entitylabel": "3.x-dev#1dd28579f4559cc03d09ab20143b1feb48644fac",
     "drupal/default_content": "^1.0-alpha8",
     "drupal/ds": "^3.5",
