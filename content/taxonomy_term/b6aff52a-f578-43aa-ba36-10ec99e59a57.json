@@ -10,19 +10,9 @@
             null
         ]
     },
-    "tid": [
-        {
-            "value": 10
-        }
-    ],
     "uuid": [
         {
             "value": "b6aff52a-f578-43aa-ba36-10ec99e59a57"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 10
         }
     ],
     "langcode": [
@@ -91,20 +81,9 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Students | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/taxonomy\/term\/10",
-                "description": "Students",
-                "og_url": "http:\/\/default\/home"
-            }
-        }
-    ],
     "path": [
         {
-            "alias": null,
+          "alias": "\/news\/students",
             "pid": null,
             "langcode": "en",
             "lang": "en"

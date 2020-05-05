@@ -10,19 +10,9 @@
             null
         ]
     },
-    "tid": [
-        {
-            "value": 5
-        }
-    ],
     "uuid": [
         {
             "value": "b1e7c455-31bf-411a-b1b8-a8306a2eabc2"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 3
         }
     ],
     "langcode": [
@@ -91,23 +81,10 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Announcements | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/announcements",
-                "description": "Announcements",
-                "news_keywords": "Announcements",
-                "og_url": "http:\/\/default\/home",
-                "keywords": "Announcements"
-            }
-        }
-    ],
     "path": [
         {
             "alias": "\/news\/announcements",
-            "pid": 3,
+            "pid": null,
             "langcode": "en",
             "lang": "en"
         }

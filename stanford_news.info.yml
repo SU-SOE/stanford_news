@@ -20,11 +20,10 @@ dependencies:
   - drupal:taxonomy
   - drupal:text
   - drupal:user
-  - ds:ds
-  - ds:ds_extras
   - entity_reference_revisions:entity_reference_revisions
   - jumpstart_ui:jumpstart_ui
   - page_manager:page_manager
+  - page_manager:page_manager_ui
   - paragraphs:paragraphs
   - pathauto:pathauto
   - stanford_media:stanford_media

@@ -12,19 +12,9 @@
             }
         ]
     },
-    "id": [
-        {
-            "value": 122
-        }
-    ],
     "uuid": [
         {
             "value": "eb5e15de-625d-4cda-8656-d18563fc0f76"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 126
         }
     ],
     "langcode": [
@@ -53,7 +43,7 @@
     ],
     "parent_id": [
         {
-            "value": "2"
+            "value": "d0378f17-40d1-4dc3-ac97-f21126599571"
         }
     ],
     "parent_type": [

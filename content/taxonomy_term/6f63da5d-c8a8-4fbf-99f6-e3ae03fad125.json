@@ -10,19 +10,9 @@
             null
         ]
     },
-    "tid": [
-        {
-            "value": 6
-        }
-    ],
     "uuid": [
         {
             "value": "6f63da5d-c8a8-4fbf-99f6-e3ae03fad125"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 5
         }
     ],
     "langcode": [
@@ -91,23 +81,10 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Awards | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/awards",
-                "description": "Awards",
-                "news_keywords": "Awards",
-                "og_url": "http:\/\/default\/home",
-                "keywords": "Awards"
-            }
-        }
-    ],
     "path": [
         {
             "alias": "\/news\/awards",
-            "pid": 6,
+            "pid": null,
             "langcode": "en",
             "lang": "en"
         }

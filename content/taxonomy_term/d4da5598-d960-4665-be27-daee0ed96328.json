@@ -10,19 +10,9 @@
             null
         ]
     },
-    "tid": [
-        {
-            "value": 8
-        }
-    ],
     "uuid": [
         {
             "value": "d4da5598-d960-4665-be27-daee0ed96328"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 4
         }
     ],
     "langcode": [
@@ -91,23 +81,10 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "In the News | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/news",
-                "description": "In the News",
-                "news_keywords": "In the News",
-                "og_url": "http:\/\/default\/home",
-                "keywords": "In the News"
-            }
-        }
-    ],
     "path": [
         {
             "alias": "\/news\/news",
-            "pid": 4,
+            "pid": null,
             "langcode": "en",
             "lang": "en"
         }

@@ -10,19 +10,9 @@
             null
         ]
     },
-    "tid": [
-        {
-            "value": 7
-        }
-    ],
     "uuid": [
         {
             "value": "14c6b724-f498-400d-8cee-99b72a50531f"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 6
         }
     ],
     "langcode": [
@@ -91,23 +81,10 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Faculty | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/faculty",
-                "description": "Faculty",
-                "news_keywords": "Faculty",
-                "og_url": "http:\/\/default\/home",
-                "keywords": "Faculty"
-            }
-        }
-    ],
     "path": [
         {
             "alias": "\/news\/faculty",
-            "pid": 7,
+            "pid": null,
             "langcode": "en",
             "lang": "en"
         }

@@ -7,19 +7,9 @@
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
         }
     },
-    "id": [
-        {
-            "value": 15
-        }
-    ],
     "uuid": [
         {
             "value": "bdf424e8-7106-414d-b333-7f5add6e8c8a"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 5
         }
     ],
     "langcode": [
@@ -105,16 +95,6 @@
         {
             "value": true,
             "lang": "en"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/home",
-                "og_url": "http:\/\/default\/home"
-            }
         }
     ]
 }

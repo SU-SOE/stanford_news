@@ -44,19 +44,9 @@
             }
         ]
     },
-    "nid": [
-        {
-            "value": 10
-        }
-    ],
     "uuid": [
         {
             "value": "fbd6c70d-fab6-4aae-956f-2df92610fad6"
-        }
-    ],
-    "vid": [
-        {
-            "value": 15
         }
     ],
     "langcode": [
@@ -143,8 +133,7 @@
                     {
                         "value": "f948f4d8-9345-46f3-86a0-4b845f38b85c"
                     }
-                ],
-                "target_revision_id": "26"
+                ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/stanford_news\/su_news_featured_media": [
@@ -260,17 +249,6 @@
         {
             "value": true,
             "lang": "en"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Sample: Smith Conference | University",
-                "og_site_name": "University",
-                "canonical_url": "http:\/\/default\/news\/sample-smith-conference",
-                "og_url": "http:\/\/default\/home",
-                "keywords": "Announcements, Awards, Faculty"
-            }
         }
     ],
     "path": [
