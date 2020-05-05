@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: taxonomy_term_overrides
+id: stanford_news_list_terms
 label: 'Taxonomy Term Overrides'
 description: 'Taxonomy Term Page Overrides'
 use_admin_theme: false

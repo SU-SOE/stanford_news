@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.taxonomy_term_overrides
-id: taxonomy_term_overrides-layout_builder-0
+    - page_manager.page.stanford_news_list_terms
+id: stanford_news_list_terms-layout_builder-0
 label: 'News - Layout Builder'
 variant: layout_builder
 variant_settings:
@@ -107,7 +107,7 @@ variant_settings:
           additional: {  }
           weight: 0
       third_party_settings: {  }
-page: taxonomy_term_overrides
+page: stanford_news_list_terms
 weight: 0
 selection_criteria: {  }
 selection_logic: and
