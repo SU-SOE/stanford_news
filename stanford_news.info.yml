@@ -26,6 +26,8 @@ dependencies:
   - page_manager:page_manager_ui
   - paragraphs:paragraphs
   - pathauto:pathauto
+  - rabbit_hole:rabbit_hole
+  - rabbit_home:rh_node
   - stanford_media:stanford_media
   - stanford_text_editor:stanford_text_editor
   - taxonomy_menu:taxonomy_menu
