@@ -85,6 +85,7 @@
     h2 {
       a {
         @include link-icon(arrow-up-right, 10px, topright);
+
         &::after {
           background-color: $su-color-bright-red;
           height: 1.8rem;
